@@ -1,6 +1,6 @@
 .title-bar{
 	border-bottom: 1px solid #eee;
-	margin: -10px 0px 30px;
+	margin: -20px 0px 30px;
 	color: #ffffff;
 	background-color: #04B4AE;
 }
@@ -44,7 +44,7 @@ footer small figure{
 footer small p{
 	padding: 0 0 0 150px;
 }
-.navigation > li > a { color: #898989; text-transform: uppercase; font-family: "Raleway", sans-serif; font-size: 14px; text-decoration: none; height: 80px; display: inline-block; position: relative; padding-right: -10px; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px; color: #2a2a2a;
+.navigation > li > a { color: #898989; text-transform: uppercase; font-family: "Raleway", sans-serif; font-size: 14px; text-decoration: none; height: 100px; display: inline-block; position: relative; padding-right: -10px; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px; color: #2a2a2a;
 }
 .navigation > li > a > span.label-nav { float: left; line-height: 20px; display: block; width: 100%; clear: both; margin: 25px 0 0 0;
 }
@@ -68,4 +68,12 @@ footer small p{
 	color: #04B4AE;
 }
 
+.navbar-brand{
+	color: #000;
 }
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+  color: #088A85;
+}
+
