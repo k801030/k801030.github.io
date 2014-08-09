@@ -1,0 +1,64 @@
+
+<header class="jumbotron subhead">
+    <div class="container">
+    	<div class="col-md-5">
+        <h2>生物力學實驗室</h2>
+        <p class="lead">
+            實驗室簡介
+        </p>
+        </div>
+        <div class="col-md-7">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+			<ui class="nav navbar-nav navbar-right">
+				<li class="hoverli">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      					Dropdown</a>
+					<ul class="dropdown-menu hover_menu">
+						<li><a href="/1">test1</a></li>
+						<li><a href="/1">test2</a></li>
+					</ul>
+				</li>
+				
+				<li class="hoverli">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      					Dropdown</a>
+					<ul class="dropdown-menu hover_menu">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test2</a></li>
+					</ul>
+				</li>
+				<li class="hoverli">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      					Dropdown</a>
+					<ul class="dropdown-menu hover_menu">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test2</a></li>
+					</ul>
+				</li>
+				<li class="hoverli">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      					Dropdown</a>
+					<ul class="dropdown-menu hover_menu">
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test2</a></li>
+					</ul>
+				</li>
+			</ui>
+		</nav>
+		</div>
+    </div>
+</header>
+
+<script>
+
+$(document).ready(function(){
+	$(".hoverli").hover(
+	function(){
+		$(this).find('ul').stop(true,true).slideDown('fast');
+	},
+	function(){
+		$(this).find('ul').stop(true,true).slideUp('fast');
+	});
+});
+
+</script>
