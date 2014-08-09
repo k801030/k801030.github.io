@@ -4060,7 +4060,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
   border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-right-radius: 0
+  
 }
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   border-bottom-right-radius: 0;
