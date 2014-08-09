@@ -9,15 +9,16 @@
 </head>
 <body>
 <div id="header"></div>
-<div class="container">
-</div>
+<div id="slideshow"></div>
+<div id="footer"></div>
 
 <script >
 $('#header').load("/assets/load/header.html");
+$('#footer').load("/assets/load/footer.html");
+$('#slideshow').load("/assets/load/slideshow.html");
 </script>
 
 <script>
-
 $(document).ready(function(){
 	$(".hoverli").hover(
 	function(){
@@ -27,7 +28,8 @@ $(document).ready(function(){
 		$(this).find('ul').stop(true,true).slideUp('fast');
 	});
 });
-
+</script>
+<script>
 </script>
 </body>
 </html>
