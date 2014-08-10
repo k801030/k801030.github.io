@@ -56,6 +56,18 @@ footer small p{
 	padding: 0 0 0 150px;
 }
 
+
+/* 
+ *  navigation text
+ */
+
+
+a.dropdown-toggle > span{
+	text-align: center;
+}
+
+
+
 /* 
  *  navigation animation
  */
@@ -116,3 +128,6 @@ footer small p{
 .switcher-content{
 	display: none;
 }
+
+
+
