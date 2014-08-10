@@ -24,14 +24,28 @@
 }
 
 .page-title{
-	padding-bottom: 9px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	font-size: 28px;
+}
+
+.page-i{
 	border-bottom: 1px solid #eee;
+	width: 50%;
+	margin: 0 auto 10 auto;
 }
 
 .page-lead{
-	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.divider-shadow { 
+	background-image: url("/assets/images/divider-shadow.png");
+	border-bottom: none;
+	margin: 40px 0 20px 0; 
+	height: 20px;
+	background-repeat: no-repeat; 
 }
 
 .footer{
@@ -121,13 +135,8 @@ a.dropdown-toggle > span{
 	margin: 0;
 }
 
-/*
- * switch content
- */
 
-.switcher-content{
-	display: none;
+
+.center{
+	text-align: center;
 }
-
-
-
