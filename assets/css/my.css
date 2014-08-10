@@ -31,6 +31,7 @@
 
 .page-lead{
 	padding-top: 10px;
+	padding-bottom: 50px;
 }
 
 .footer{
@@ -108,3 +109,10 @@ footer small p{
 	margin: 0;
 }
 
+/*
+ * switch content
+ */
+
+.switcher-content{
+	display: none;
+}
