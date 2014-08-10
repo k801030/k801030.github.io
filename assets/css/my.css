@@ -145,7 +145,9 @@ a.dropdown-toggle > span{
 .switcher-content{
 	display: none;
 }
-
+a{
+	cursor: pointer;
+}
 
 
 .center{
