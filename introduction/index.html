@@ -7,6 +7,7 @@
 	<script src="/assets/jquery/jquery-2.1.0.min.js"></script>
 	<script src="/assets/bootstrap-3.2.0/js/bootstrap.min.js"></script>
 	<script src="/assets/jquery/content-panel-switcher.js"></script>
+	<title>INTRODUCTION | 生物力學實驗室 - Biomechanics Laboratory</title>
 </head>
 <body>
 
@@ -18,13 +19,20 @@
 <div class="container">
 
 <div class="row">
-	
-	<div class="col-md-12">
-		<div class="context center">
-			
+	<div class="col-md-3 col">
+			<ui class="nav nav-pills nav-stacked">
+				<li><a id="1" class="switcher" href="#">生物力學實驗室</a></li>
+				<li><a id="2" class="switcher" href="#">材料測試實驗室</a></li>
+				<li><a id="3" class="switcher" href="#">電腦輔助系統實驗室</a></li>
+			</ui>
+		</div>
 
+	<div class="col-md-9">
+		<div class="context">
+			<!-- use to display -->
+			<div id="switcher-panel"></div>
 			
-				<div id="lab1-content" >
+				<div id="1-content" class="switcher-content show">
 					<div class="page-title" >
 						生物力學實驗室
 					</div>
@@ -36,12 +44,12 @@
 
 						以及生物試樣微小結構觀察。<br/>
 					</div>
-					<div class="divider-shadow"></div>
+					
 				</div>
 
-				<div id="lab2-content">
+				<div id="2-content" class="switcher-content">
 					<div class="page-title" >
-						材料測試實驗室(輻射)
+						材料測試實驗室
 					</div>
 					<div class="page-i"></div>
 					<div class="page-lead">
@@ -51,9 +59,9 @@
 
 						連續衝擊負載測試。<br/>
 					</div>
-					<div class="divider-shadow"></div>
+					
 				</div>
-				<div id="lab3-content">
+				<div id="3-content" class="switcher-content">
 					<div class="page-title" >
 						電腦輔助系統實驗室
 					</div>
@@ -84,23 +92,11 @@ $('#footer').load("/assets/load/footer.html");
 
 
 <script>
-
+// if side-nav needed
 $(document).ready(function() {
    jcps.fader(300, '#switcher-panel');
+   $('#1-content').removeClass("show"); //when ready, stop keeping show method
 });
-
-
-$('.nav-switcher').on('click',function(){
-	var id = $(this).attr('id');
-	for( var i=1; i<4; i++){
-		if(i == id)
-			$('.lab'+i+'-content').show();
-		else
-			$('.lab'+i+'-content').hide();
-	}
-});
-
-
 
 </script>
 

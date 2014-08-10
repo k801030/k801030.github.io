@@ -32,6 +32,9 @@
 .page-i{
 	border-bottom: 1px solid #eee;
 	width: 50%;
+	
+}
+.page-i .center{
 	margin: 0 auto 10 auto;
 }
 
@@ -135,8 +138,20 @@ a.dropdown-toggle > span{
 	margin: 0;
 }
 
+/*
+ * switch content
+ */
+
+.switcher-content{
+	display: none;
+}
+
 
 
 .center{
 	text-align: center;
+}
+
+p{
+	line-height: 200%;
 }
