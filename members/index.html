@@ -1,0 +1,118 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap.css">
+	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/assets/css/my.css">
+	<script src="/assets/jquery/jquery-2.1.0.min.js"></script>
+	<script src="/assets/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+	<script src="/assets/jquery/content-panel-switcher.js"></script>
+	<title>MEMBERS | 生物力學實驗室 - Biomechanics Laboratory</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<div class="title-bar" id="title">
+				<h1>MEMBERS</h1>
+</div>
+<div class="container">
+
+<div class="row">
+	<div class="col-md-3 col">
+			<ui class="nav nav-pills nav-stacked">
+				<li><a id="1" class="switcher" href="#">指導教授</a></li>
+				<li><a id="2" class="switcher" href="#">博士班</a></li>
+				<li><a id="3" class="switcher" href="#">碩士班</a></li>
+			</ui>
+		</div>
+
+	<div class="col-md-9">
+		<div class="context">
+			<!-- use to display -->
+			<div id="switcher-panel"></div>
+			
+				<div id="1-content" class="switcher-content show">
+					<div class="page-title" >
+						指導教授
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+						<div class="col-md-4">
+						<img class="profile circular" src="/assets/images/members/host.jpg">
+						</div>
+						<div class="col-md-6">
+						<br>
+						<h4>王兆麟 教授</h4>
+					   Professor Jaw-Lin Wang <br><br>
+					   國立台灣大學醫學工程研究所 專任教授 <br>
+					   國立台灣大學機械工程系 合聘教授 <br>
+						<br>
+						<br>
+
+						<h3>研究領域</h3>
+
+						生物力學<br>
+						電腦輔助手術技術 <br>
+						醫學影像處理與分析<br>
+						
+						 <h3>學歷 </h3>
+						美國俄亥俄州立大學 工程力學系 博士 1996 <br>
+						國立台灣科技大學 機械工程系 碩士 1991 <br>
+						國立台灣大學 機械工程系 學士 1986 <br>
+					<br>
+					<br>
+						</div>
+					</div>
+					
+				</div>
+
+				<div id="2-content" class="switcher-content">
+					<div class="page-title" >
+						博士班
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+						
+					</div>
+					
+				</div>
+				<div id="3-content" class="switcher-content">
+					<div class="page-title" >
+						碩士班
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+						
+					</div>
+					
+				</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="footer"></div>
+
+<script >
+$('#header').load("/assets/load/header.html");
+$('#footer').load("/assets/load/footer.html");
+</script>
+
+
+<script>
+// if side-nav needed
+$(document).ready(function() {
+   jcps.fader(300, '#switcher-panel');
+   $('#1-content').removeClass("show"); //when ready, stop keeping show method
+});
+
+</script>
+
+</body>
+</html>
