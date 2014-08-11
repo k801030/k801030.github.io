@@ -165,9 +165,15 @@ a.dropdown-toggle > span{
  * side nav
  */
 
+.side-nav > li > a{
+	color: #bbb; 
+}
+
 .side-nav > li:first-child{
 	border-left: 2px solid #039b96;
+	color: #000;
 }
+
 
 .side-nav > li:hover > a{
 	color: #039b96; 
