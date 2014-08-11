@@ -3,6 +3,7 @@
  *  title bar
  */
 .title-bar{
+	opacity: 0;
 	border-bottom: 1px solid #eee;
 	margin: -20px 0px 30px;
 	color: #ffffff;
@@ -22,6 +23,13 @@
     padding-bottom: 15px;
   }
 }
+
+/*
+ *  context
+ */
+.context{
+}
+
 
 .page-title{
 	padding-top: 10px;
@@ -157,3 +165,16 @@ a{
 p{
 	line-height: 200%;
 }
+
+/*
+ *  for slide show
+ */
+
+.fadein{
+	opacity: 0;
+}
+
+
+
+
+

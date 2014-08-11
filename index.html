@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="header"></div>
-<div id="slideshow"></div>
+<div id="slideshow" class="fadein"></div>
 <div id="footer"></div>
 
 <script >
@@ -18,16 +18,11 @@ $('#header').load("/assets/load/header.html");
 $('#footer').load("/assets/load/footer.html");
 $('#slideshow').load("/assets/load/slideshow.html");
 </script>
+<script src="/assets/jquery/animate.js"></script>
 
 <script>
 $(document).ready(function(){
-	$(".hoverli").hover(
-	function(){
-		$(this).find('ul').stop(true,true).slideDown('fast');
-	},
-	function(){
-		$(this).find('ul').stop(true,true).slideUp('fast');
-	});
+	$('.fadein').delay(200).animate({ opacity: 1 }, 700);
 });
 </script>
 <script>

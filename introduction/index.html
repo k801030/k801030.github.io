@@ -7,11 +7,73 @@
 	<script src="/assets/jquery/jquery-2.1.0.min.js"></script>
 	<script src="/assets/bootstrap-3.2.0/js/bootstrap.min.js"></script>
 	<script src="/assets/jquery/content-panel-switcher.js"></script>
+	<script src="/assets/jquery/animate.js"></script>
 	<title>INTRODUCTION | 生物力學實驗室 - Biomechanics Laboratory</title>
 </head>
 <body>
 
-<div id="header"></div>
+<div id="header">
+<header class="jumbotron subhead">
+    <div class="container">
+    	<div class="col-md-5">
+		    <a href="../" class="navbar-brand">
+			    <h2>生物力學實驗室</h2>
+			    <p class="lead">
+			        BIOMECHANICS LABORATORY
+			    </p>
+		    </a>
+        </div>
+        <div class="col-md-7">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+			<ui class="nav navbar-nav  navigation">
+				
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/introduction/">
+						<span class="label-nav fff">實驗室介紹</span>
+						<span class="label-nav-sub">Introduction</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle"  href="/members">
+						<span class="label-nav">成員</span>
+						<span class="label-nav-sub">Members</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/research">
+						<span class="label-nav">研究內容</span>
+						<span class="label-nav-sub">Research</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="#">
+						<span class="label-nav">相關資源</span>
+						<span class="label-nav-sub">Resources</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="#">
+						<span class="label-nav">聯絡我們</span>
+						<span class="label-nav-sub">Contact Us</span>
+      				</a>
+					
+				</li>
+
+			</ui>
+		</nav>
+		</div>
+    </div>
+</header>
+
+</div>
 
 <div class="title-bar" id="title">
 				<h1>INTRODUCTION</h1>
@@ -33,7 +95,7 @@
 			<div id="switcher-panel"></div>
 			
 				<div id="1-content" class="switcher-content show">
-					<div class="page-title" >
+					<div class="page-title">
 						生物力學實驗室
 					</div>
 					<div class="page-i"></div>
@@ -79,17 +141,12 @@
 </div>
 
 
-
-
-
-
 <div id="footer"></div>
 
 <script >
-$('#header').load("/assets/load/header.html");
 $('#footer').load("/assets/load/footer.html");
 </script>
-
+<script src="/assets/jquery/animate.js"></script>
 
 <script>
 // if side-nav needed
