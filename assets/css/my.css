@@ -146,8 +146,21 @@ a.dropdown-toggle > span{
 	margin: 0;
 }
 
+
 /*
- * switch content
+ * side nav
+ */
+
+.side-nav > li:first-child{
+	border-left: 2px solid #039b96;
+}
+
+.side-nav > li:hover > a{
+	color: #039b96; 
+}
+
+/*
+ * switcher content
  */
 
 .switcher-content{
