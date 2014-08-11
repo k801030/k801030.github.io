@@ -11,9 +11,67 @@
 </head>
 <body>
 
-<div id="header"></div>
+<header class="jumbotron subhead">
+    <div class="container">
+    	<div class="col-md-5">
+		    <a href="../" class="navbar-brand">
+			    <h2>生物力學實驗室</h2>
+			    <p class="lead">
+			        BIOMECHANICS LABORATORY
+			    </p>
+		    </a>
+        </div>
+        <div class="col-md-7">
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+			<ui class="nav navbar-nav  navigation">
+				
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/introduction/">
+						<span class="label-nav fff">實驗室介紹</span>
+						<span class="label-nav-sub">Introduction</span>
+      				</a>
+					
+				</li>
 
-<div class="title-bar" id="title">
+				<li class="hoverli">
+					<a class="dropdown-toggle"  href="/members">
+						<span class="label-nav">成員</span>
+						<span class="label-nav-sub">Members</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/research">
+						<span class="label-nav">研究內容</span>
+						<span class="label-nav-sub">Research</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/resources">
+						<span class="label-nav">相關資源</span>
+						<span class="label-nav-sub">Resources</span>
+      				</a>
+					
+				</li>
+
+				<li class="hoverli">
+					<a class="dropdown-toggle" href="/contact_us">
+						<span class="label-nav">聯絡我們</span>
+						<span class="label-nav-sub">Contact Us</span>
+      				</a>
+					
+				</li>
+
+			</ui>
+		</nav>
+		</div>
+    </div>
+</header>
+
+<div class="title-bar col-md-12" id="title">
 				<h1>MEMBERS</h1>
 </div>
 <div class="container">
@@ -22,8 +80,8 @@
 	<div class="col-md-3 col">
 			<ui class="nav nav-pills nav-stacked side-nav">
 				<li><a id="1" class="switcher">指導教授</a></li>
-				<li><a id="2" class="switcher">博士班</a></li>
-				<li><a id="3" class="switcher">碩士班</a></li>
+				<li><a id="2" class="switcher">在校生</a></li>
+				<li><a id="3" class="switcher">已畢業</a></li>
 			</ui>
 		</div>
 
@@ -33,13 +91,13 @@
 			<div id="switcher-panel"></div>
 			
 				<div id="1-content" class="switcher-content show">
-					<div class="page-title" >
+					<div class="page-title">
 						指導教授
 					</div>
 					<div class="page-i"></div>
 					<div class="page-lead">
 						<div class="col-md-4">
-						<img class="profile circular" src="/assets/images/members/host.jpg">
+						<img class="profile host circular" src="/assets/images/members/host.jpg">
 						</div>
 						<div class="col-md-6">
 						<br>
@@ -69,21 +127,173 @@
 
 				<div id="2-content" class="switcher-content">
 					<div class="page-title" >
-						博士班
+						博士後研究員
 					</div>
 					<div class="page-i"></div>
 					<div class="page-lead">
+						<div class="person">
+							<div class=" col-md-2">
+									<img class="profile circular" src="/assets/images/members/rabbit.jpg">
+							</div>
+							<div class="col-md-8">
+									<table class="member-content">
+										<tr>
+											<th>姓名</th><td>林佳慶</td>
+										</tr>
+										<tr>
+											<th>研究領域 </th><td>探討一節或兩節前路椎間融合手術暨幾何形態因子對於病人術後整體與椎節的運動行為之影響</td>
+										</tr>
+										<tr>
+											<th>信箱</th><td>r01548017@ntu.edu.tw</td>
+										</tr>
+									</table>
+							</div>
+						</div>
 						
+						<div class="person">
+							<div class="col-md-2">
+									<img class="profile circular" src="/assets/images/members/rabbit.jpg">
+							</div>
+							<div class="col-md-8">
+									<table class="member-content">
+										<tr>
+											<th>姓名</th><td>李典翰</td>
+										</tr>
+										<tr>
+											<th>研究領域 </th><td>適用於早發性小兒脊椎側彎自適應矯正生長桿之設計與評估</td>
+										</tr>
+										<tr>
+											<th>信箱</th><td>r01548021@ntu.edu.tw</td>
+										</tr>
+									</table>
+							</div>
+						</div>
+
 					</div>
-					
+					<div class="page-title" >
+						博士生
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+
+						<div class="person">
+							<div class="col-md-2">
+									<img class="profile circular" src="/assets/images/members/none.jpg">
+							</div>
+							<div class="col-md-8">
+									<table class="member-content">
+										<tr>
+											<th>姓名</th><td>NAME</td>
+										</tr>
+										<tr>
+											<th>研究領域 </th><td>ABCDEFG</td>
+										</tr>
+										<tr>
+											<th>信箱</th><td>a00000000@ntu.edu.tw</td>
+										</tr>
+									</table>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="page-title" >
+						碩士生
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+
+						<div class="person">
+							<div class=" col-md-2">
+									<img class="profile circular" src="/assets/images/members/none.jpg">
+							</div>
+							<div class="col-md-8">
+									<table class="member-content">
+										<tr>
+											<th>姓名</th><td>NAME</td>
+										</tr>
+										<tr>
+											<th>研究領域 </th><td>ABCDEFG</td>
+										</tr>
+										<tr>
+											<th>信箱</th><td>a00000000@ntu.edu.tw</td>
+										</tr>
+									</table>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="page-title" >
+						研究助理
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+						<div class="person">
+							<div class=" col-md-2">
+									<img class="profile circular" src="/assets/images/members/none.jpg">
+							</div>
+							<div class="col-md-8">
+									<table class="member-content">
+										<tr>
+											<th>姓名</th><td>NAME</td>
+										</tr>
+										<tr>
+											<th>研究領域 </th><td>ABCDEFG</td>
+										</tr>
+										<tr>
+											<th>信箱</th><td>a00000000@ntu.edu.tw</td>
+										</tr>
+									</table>
+							</div>
+						</div>
+
+
+					</div>
 				</div>
 				<div id="3-content" class="switcher-content">
 					<div class="page-title" >
-						碩士班
+						已畢業
 					</div>
 					<div class="page-i"></div>
 					<div class="page-lead">
-						
+						<div class="person">
+							<div class="col-md-10">
+									<table class="member-content wider">
+										<tr>
+											<th width="5%">級</th>
+											<th width="15%">姓名</th>
+											<th width="50%">研究</th>
+											<th width="30%">信箱</th>
+										</tr>
+										<tr>
+											<td>LEVEL</td>
+											<td>NAME1</td>
+											<td>我的研究</td>
+											<td>我的信箱</td>
+										</tr>
+										<tr>
+											<td>LEVEL</td>
+											<td>NAME2</td>
+											<td>我的研究</td>
+											<td>我的信箱</td>
+										</tr>
+										<tr>
+											<td>LEVEL</td>
+											<td>NAME3</td>
+											<td>我的研究</td>
+											<td>我的信箱</td>
+										</tr>
+										<tr>
+											<td>LEVEL</td>
+											<td>NAME4</td>
+											<td>我的研究</td>
+											<td>我的信箱</td>
+										</tr>
+									</table>
+							</div>
+						</div>
 					</div>
 					
 				</div>
@@ -100,7 +310,6 @@
 <div id="footer"></div>
 
 <script >
-$('#header').load("/assets/load/header.html");
 $('#footer').load("/assets/load/footer.html");
 </script>
 <script src="/assets/jquery/animate.js"></script>
