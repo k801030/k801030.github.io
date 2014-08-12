@@ -1,6 +1,13 @@
 // title bar
 
-$('.title-bar').delay(300).animate({ opacity: 1 }, 300);
+$('.title-bar-bg').delay(300).animate({ opacity: 1 }, 300);
+
+$('.title-bar h1').delay(300).animate({
+	"margin-left" : "-20px"
+}, {
+  duration: 500
+});
+
 
 //
 $('.side-nav li').click(function(){
@@ -17,3 +24,4 @@ $('.side-nav li').hover(function(){
 	function(){
 	$(this).find('a').css({"color": ""});
 });
+
