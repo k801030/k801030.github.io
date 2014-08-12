@@ -121,7 +121,6 @@ a.dropdown-toggle > span{
 .ie10 .navigation > li:hover > a > span.label-nav-sub { transform: none;
 } .navigation > li:hover > a > span.label-nav-sub::before, .navigation > li:hover > a > span.label-nav-sub::before { color: #279fbb; opacity: 1; opacity: 0\9;
 } .navigation > li > .activelink span.label-nav-sub { color: #585858;
-} .navigation > li:last-child > a { margin-right: 0; padding-right: 0;
 } /* set all LI to relative */
 
 .hover_menu > li:hover >a {
@@ -246,4 +245,28 @@ table.member-content th{
  	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
  	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
+
+/* 
+ * switch bottom
+ */
+ul.switch-list{
+	white-space:nowrap;
+
+}
+
+ul.switch-list > li{
+	display:inline;
+	padding: -10px;
+	border: 1px solid #04B4AE;
+	margin: -10px;
+}
+
+
+ul.switch-list > li:hover{
+	cursor: pointer;
+	display:inline;
+	background-color: #04B4AE;
+}
+
 

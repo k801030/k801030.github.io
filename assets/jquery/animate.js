@@ -25,3 +25,24 @@ $('.side-nav li').hover(function(){
 	$(this).find('a').css({"color": ""});
 });
 
+
+
+// 
+function switch_button(id){
+	$('.switch-list li').css({
+		"color" : "",
+		"background-color" : "",
+	});
+
+	$('#'+id).css({
+		"color" : "#fff",
+		"background-color" : "#04B4AE"
+	});
+
+	$('.switch-block').css({"display":"none"});
+
+	$('#'+id+'-block').show();
+	
+}
+
+
