@@ -29,15 +29,9 @@ $('.side-nav li').hover(function(){
 
 // 
 function switch_button(id){
-	$('.switch-list li').css({
-		"color" : "",
-		"background-color" : "",
-	});
+	$('.switch-list li').removeClass('switch-list-selected');
 
-	$('#'+id).css({
-		"color" : "#fff",
-		"background-color" : "#04B4AE"
-	});
+	$('#'+id).addClass('switch-list-selected');
 
 	$('.switch-block').css({"display":"none"});
 

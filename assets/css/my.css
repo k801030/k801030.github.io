@@ -271,9 +271,10 @@ ul.switch-list > li{
 }
 
 
-ul.switch-list > li:hover{
+.switch-list-selected,ul.switch-list > li:hover{
 	cursor: pointer;
 	display:inline;
+	color: #fff;
 	background-color: #04B4AE;
 }
 
