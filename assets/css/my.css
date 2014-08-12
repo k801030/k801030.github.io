@@ -150,6 +150,7 @@ a.dropdown-toggle > span{
  */
 .person{
 	clear: left;
+	margin-bottom: 10px;
 }
 
 .circular {
@@ -232,18 +233,19 @@ table.member-content{
 	word-wrap: break-word; 
 	word-break: normal;
 	margin-left: 10px;
+	margin-top: 20px;
 }
 table.member-content td{
 	padding: 5px;
 }
 
 table.member-content.wider td{
-	padding: 10px 0 10px 0;
+	padding: 10px 10px 10px 1;
 }
 
 table.member-content th{
 	color: #04B4AE;
-	min-width: 60px;
+	min-width: 80px;
 }
 
 
