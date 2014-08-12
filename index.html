@@ -73,7 +73,6 @@
 <div id="footer"></div>
 
 <script >
-$('#header').load("/assets/load/header.html");
 $('#footer').load("/assets/load/footer.html");
 $('#slideshow').load("/assets/load/slideshow.html");
 </script>
@@ -82,9 +81,9 @@ $('#slideshow').load("/assets/load/slideshow.html");
 <script>
 $(document).ready(function(){
 	$('.fadein').delay(200).animate({ opacity: 1 }, 700);
+	$('.title-bar-bg').delay(300).animate({ opacity: 1 }, 300);
+}
+</script>
 
-</script>
-<script>
-</script>
 </body>
 </html>
