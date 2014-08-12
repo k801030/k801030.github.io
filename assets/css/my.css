@@ -254,7 +254,7 @@ table.member-content.wider td{
 
 table.member-content th{
 	color: #04B4AE;
-	min-width: 80px;
+	padding-bottom: 10px;
 }
 
 
