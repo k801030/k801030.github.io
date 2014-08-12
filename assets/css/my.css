@@ -278,5 +278,8 @@ ul.switch-list > li{
 	background-color: #04B4AE;
 }
 
+.switch-block.other{
+	display: none;
+}
 
 

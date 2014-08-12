@@ -29,13 +29,16 @@ $('.side-nav li').hover(function(){
 
 // 
 function switch_button(id){
-	$('.switch-list li').removeClass('switch-list-selected');
+	var num = (id[id.length-1]) %2 ? 2 : 1;
+	var counter = id.substr(0,id.length-1);
+	counter += num;
+	$('#'+counter).removeClass('switch-list-selected');
 
 	$('#'+id).addClass('switch-list-selected');
 
-	$('.switch-block').css({"display":"none"});
+	$('#'+counter+'-block').css({"display":"none"});
 
-	$('#'+id+'-block').show();
+	$('#'+id+'-block').css({"display":"block"});
 	
 }
 
