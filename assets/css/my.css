@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* 
  *  title bar
@@ -21,6 +22,19 @@
 	font-weight: normal;
 	padding-bottom: 15px;
 	color: #ffffff;
+=======
+.title-bar{
+	border-bottom: 1px solid #eee;
+	margin: -20px 0px 30px;
+	color: #ffffff;
+	background-color: #04B4AE;
+}
+
+.title-bar h1{
+	padding-left: 60px;
+	font-size: 30px;
+	font-weight: normal;
+>>>>>>> 9853d9114775a07f51e49bdc2a79a21ba4517fd0
 }
 
 @media screen and (min-width: 768px) {
@@ -30,6 +44,7 @@
   }
 }
 
+<<<<<<< HEAD
 /*
  *  context
  */
@@ -64,6 +79,16 @@
 	margin: 40px 0 20px 0; 
 	height: 20px;
 	background-repeat: no-repeat; 
+=======
+.page-title{
+	padding-bottom: 9px;
+	font-size: 28px;
+	border-bottom: 1px solid #eee;
+}
+
+.page-lead{
+	padding-top: 10px;
+>>>>>>> 9853d9114775a07f51e49bdc2a79a21ba4517fd0
 }
 
 .footer{
@@ -74,9 +99,11 @@
 	background-color:#f5f5f5
 }
 
+<<<<<<< HEAD
 /* 
  *  footer
  */
+
 
 footer small figure{
 	float: left;
@@ -87,6 +114,7 @@ footer small p{
 	text-align: center;
 	padding: 0 0 0 150px;
 }
+
 
 
 /* 
@@ -103,6 +131,7 @@ a.dropdown-toggle > span{
 /* 
  *  navigation animation
  */
+
 
 .navigation > li > a { color: #898989; text-transform: uppercase; font-family: "Raleway", sans-serif; font-size: 14px; text-decoration: none; height: 100px; display: inline-block; position: relative; padding-right: -10px; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px; color: #2a2a2a;
 }
@@ -121,6 +150,7 @@ a.dropdown-toggle > span{
 .ie10 .navigation > li:hover > a > span.label-nav-sub { transform: none;
 } .navigation > li:hover > a > span.label-nav-sub::before, .navigation > li:hover > a > span.label-nav-sub::before { color: #279fbb; opacity: 1; opacity: 0\9;
 } .navigation > li > .activelink span.label-nav-sub { color: #585858;
+
 } /* set all LI to relative */
 
 .hover_menu > li:hover >a {
@@ -135,6 +165,7 @@ a.dropdown-toggle > span{
   text-decoration: none;
   color: #088A85;
 }
+
 
 
 /* 
@@ -268,5 +299,6 @@ ul.switch-list > li:hover{
 	display:inline;
 	background-color: #04B4AE;
 }
+
 
 
