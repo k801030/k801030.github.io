@@ -367,6 +367,7 @@ ul.switch-list > li{
 
 
 .panel-content{
+	float: left;
 	margin: 3px 0 0 0;
 	padding: 16px 0 80px 5px;
 	border: 0px;
@@ -377,9 +378,15 @@ ul.switch-list > li{
 
 .panel-block{
 	display: none;
+	overflow: auto;
 }
-
 .panel-block.selected{
 	display: block;
+}
+
+iframe{
+	width: auto;
+	height: 100%;
+	overflow: hidden;
 }
 

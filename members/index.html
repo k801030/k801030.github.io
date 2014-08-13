@@ -111,84 +111,26 @@
 
 							<!-- block 1 -->
 							<div class="panel-block selected" id="panel-1-block">
-								<div class="col-md-4">
-								<img class="profile host circular" src="/assets/images/members/host.jpg">
-								</div>
-								<div class="col-md-6">
-								<h4>王兆麟 教授</h4>
-							   Professor Jaw-Lin Wang <br><br>
-							   國立台灣大學醫學工程研究所 專任教授 <br>
-							   國立台灣大學機械工程系 合聘教授 <br>
-								<br>
-								<br>
-
-								<h3>研究領域</h3>
-
-								生物力學<br>
-								電腦輔助手術技術 <br>
-								醫學影像處理與分析<br>
-								
-								 <h3>學歷 </h3>
-								美國俄亥俄州立大學 工程力學系 博士 1996 <br>
-								國立台灣科技大學 機械工程系 碩士 1991 <br>
-								國立台灣大學 機械工程系 學士 1986 <br>
-							<br>
-							<br>
-								</div>
 							</div>
 
 							<!-- block 2 -->
 							<div class="panel-block" id="panel-2-block">	
-								<div class="col-md-10">
-								
-								 <h3>學歷 </h3>
-								美國俄亥俄州立大學 工程力學系 博士 1996 <br>
-								國立台灣科技大學 機械工程系 碩士 1991 <br>
-								國立台灣大學 機械工程系 學士 1986 <br>
-								 <h3>經歷 </h3>
-								 國立台灣大學 機械工程系 合聘教授 2009.01 ~ <br>
-
-								</div>
 							</div>
 
 							<!-- block 3 -->
 							<div class="panel-block" id="panel-3-block">	
-								<div class="col-md-10">
-									
-								 <h3>三 </h3>
-									第三<br>
-
-								</div>
 							</div>
 
 							<!-- block 4 -->
 							<div class="panel-block" id="panel-4-block">	
-								<div class="col-md-10">
-
-								 <h3>4 </h3>
-									第4<br>
-									
-								</div>
 							</div>
 
 							<!-- block 5 -->
 							<div class="panel-block" id="panel-5-block">	
-								<div class="col-md-10">
-
-								 <h3>5 </h3>
-									第5<br>
-									
-								</div>
 							</div>
 
 							<!-- block 6 -->
 							<div class="panel-block" id="panel-6-block">	
-								<div class="col-md-10">
-
-								 <h3>6 </h3>
-									第6<br>
-									
-								</div>
 							</div>
 					</div>
 					
@@ -944,7 +886,6 @@
 
 <script >
 $('#footer').load("/assets/load/footer.html");
-
 </script>
 
 <script>
@@ -954,6 +895,8 @@ $(document).ready(function() {
    $('#1-content').removeClass("show"); //when ready, stop keeping show method
 
    $.getScript("/assets/jquery/animate.js");
+   	
+	loadiFrame();
 });
 
 $('#1').click(function(){
@@ -962,6 +905,8 @@ $('#1').click(function(){
 
 	var default_panel_content = $('#1-content').find('#panel-1-block');
 	default_panel_content.addClass('selected');
+
+	setTimeout(loadiFrame,800);
 });
 
 $('#3').click(function(){
@@ -971,6 +916,19 @@ $('#3').click(function(){
 	var default_panel_content = $('#3-content').find('#panel-11-block');
 	default_panel_content.addClass('selected');
 });
+
+
+
+function loadiFrame(){
+	$('#panel-1-block').load("block-1.html");
+	$('#panel-2-block').load("block-2.html");
+	$('#panel-3-block').load("block-3.html");
+	$('#panel-4-block').load("block-4.html");
+	$('#panel-5-block').load("block-5.html");
+	$('#panel-6-block').load("block-6.html");
+}
+
+
 
 
 
