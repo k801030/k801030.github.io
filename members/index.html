@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link href="/assets/images/logo.png" rel="SHORTCUT ICON">
 	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap.css">
 	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="/assets/css/my.css">
@@ -93,36 +94,98 @@
 			<div id="switcher-panel"></div>
 			
 				<div id="1-content" class="switcher-content show">
-					<div class="page-title">
-						指導教授
-					</div>
-					<div class="page-i"></div>
-					<div class="page-lead">
-						<div class="col-md-4">
-						<img class="profile host circular" src="/assets/images/members/host.jpg">
-						</div>
-						<div class="col-md-6">
-						<br>
-						<h4>王兆麟 教授</h4>
-					   Professor Jaw-Lin Wang <br><br>
-					   國立台灣大學醫學工程研究所 專任教授 <br>
-					   國立台灣大學機械工程系 合聘教授 <br>
-						<br>
-						<br>
 
-						<h3>研究領域</h3>
+					<ul class="col-md-12 panel-title">
+						<li id='panel-1' class="selected" onclick="panel_click(id);">個人簡介</li>
+						<li id='panel-2' onclick="panel_click(id);">學經歷</li>
+						<li id='panel-3' onclick="panel_click(id);">榮譽事蹟</li>
+						<li id='panel-4' onclick="panel_click(id);">研究領域</li>
+						<li id='panel-5' onclick="panel_click(id);">開授課程</li>
+						<li id='panel-6' onclick="panel_click(id);">著作發表</li>				
+					</ul>
+					<div class="col-md-12 panel-content">
 
-						生物力學<br>
-						電腦輔助手術技術 <br>
-						醫學影像處理與分析<br>
-						
-						 <h3>學歷 </h3>
-						美國俄亥俄州立大學 工程力學系 博士 1996 <br>
-						國立台灣科技大學 機械工程系 碩士 1991 <br>
-						國立台灣大學 機械工程系 學士 1986 <br>
-					<br>
-					<br>
-						</div>
+							<!-- block 1 -->
+							<div class="panel-block" id="panel-1-block">
+								<div class="col-md-4">
+								<img class="profile host circular" src="/assets/images/members/host.jpg">
+								</div>
+								<div class="col-md-6">
+								<h4>王兆麟 教授</h4>
+							   Professor Jaw-Lin Wang <br><br>
+							   國立台灣大學醫學工程研究所 專任教授 <br>
+							   國立台灣大學機械工程系 合聘教授 <br>
+								<br>
+								<br>
+
+								<h3>研究領域</h3>
+
+								生物力學<br>
+								電腦輔助手術技術 <br>
+								醫學影像處理與分析<br>
+								
+								 <h3>學歷 </h3>
+								美國俄亥俄州立大學 工程力學系 博士 1996 <br>
+								國立台灣科技大學 機械工程系 碩士 1991 <br>
+								國立台灣大學 機械工程系 學士 1986 <br>
+							<br>
+							<br>
+								</div>
+							</div>
+
+							<!-- block 2 -->
+							<div class="panel-block hide" id="panel-2-block">	
+								<div class="col-md-10">
+
+								 <h3>學歷 </h3>
+								美國俄亥俄州立大學 工程力學系 博士 1996 <br>
+								國立台灣科技大學 機械工程系 碩士 1991 <br>
+								國立台灣大學 機械工程系 學士 1986 <br>
+								 <h3>經歷 </h3>
+								 國立台灣大學 機械工程系 合聘教授 2009.01 ~ <br>
+
+								</div>
+							</div>
+
+							<!-- block 3 -->
+							<div class="panel-block hide" id="panel-3-block">	
+								<div class="col-md-10">
+
+								 <h3>三 </h3>
+									第三<br>
+
+								</div>
+							</div>
+
+							<!-- block 4 -->
+							<div class="panel-block hide" id="panel-4-block">	
+								<div class="col-md-10">
+
+								 <h3>4 </h3>
+									第4<br>
+									
+								</div>
+							</div>
+
+							<!-- block 5 -->
+							<div class="panel-block hide" id="panel-5-block">	
+								<div class="col-md-10">
+
+								 <h3>5 </h3>
+									第5<br>
+									
+								</div>
+							</div>
+
+							<!-- block 6 -->
+							<div class="panel-block hide" id="panel-6-block">	
+								<div class="col-md-10">
+
+								 <h3>6 </h3>
+									第6<br>
+									
+								</div>
+							</div>
 					</div>
 					
 				</div>
@@ -404,6 +467,7 @@
 					<div class="page-i"></div>
 					<div class="page-lead switch-block" id="switch-list-1-block">
 						<div class="person">
+
 							<div class="col-md-11">
 									<table class="table-hover member-content wider">
 										<colgroup>
@@ -498,7 +562,7 @@
 					</div>
 					
 					<!-- block 2 -->
-					<div class="page-lead switch-block other" id="switch-list-2-block">
+					<div class="page-lead switch-block hide" id="switch-list-2-block">
 						<div class="person">
 							<div class="col-md-11">
 									<table class="table-hover member-content wider">
@@ -872,15 +936,20 @@
 
 <script >
 $('#footer').load("/assets/load/footer.html");
+
 </script>
-<script src="/assets/jquery/animate.js"></script>
 
 <script>
 // if side-nav needed
 $(document).ready(function() {
    jcps.fader(300, '#switcher-panel');
    $('#1-content').removeClass("show"); //when ready, stop keeping show method
+
+   $.getScript("/assets/jquery/animate.js");
 });
+
+
+
 
 </script>
 

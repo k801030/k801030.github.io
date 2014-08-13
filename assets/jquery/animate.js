@@ -42,4 +42,14 @@ function switch_button(id){
 	
 }
 
+// members.html panel
+var default_panel = 0;
+function panel_click(id){	
+	$('.panel-title li').removeClass('selected');
+	$('#'+id).addClass('selected');
+	$('.panel-block').not("#"+id+"-block").addClass('hide');
+	$("#"+id+"-block").removeClass('hide');
+	default_panel = id;
+}
+
 

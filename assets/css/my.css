@@ -172,10 +172,10 @@ a.dropdown-toggle > span{
 	width: 100px;
 	height: 100px;
 	margin-bottom: 15px;
-	box-shadow: 3px 3px 2px #ccc; 
-	-moz-box-shadow: 3px 3px 2px #ccc; 
-	-webkit-box-shadow: 3px 3px 2px #ccc; 
-	-khtml-box-shadow: 3px 3px 2px #ccc; 
+	list-shadow: 3px 3px 2px #ccc; 
+	-moz-list-shadow: 3px 3px 2px #ccc; 
+	-webkit-list-shadow: 3px 3px 2px #ccc; 
+	-khtml-list-shadow: 3px 3px 2px #ccc; 
 }
 
 .profile.host{
@@ -244,13 +244,35 @@ table.member-content{
 	margin-left: 10px;
 	margin-top: 20px;
 }
-table.member-content td{
+
+table.member-content-list{
+	table-layout:auto;
+	font-size: 14px;
+	list-style: none;
+	word-wrap: break-word; 
+	word-break: normal;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+table.member-content-list td{
+	
+}
+
+table.member-content-list.wider td{
 	padding: 5px;
 }
 
-table.member-content.wider td{
-	padding: 10px 10px 10px 1;
+table.member-content-list th{
+	color: #04B4AE;
+	min-width: 80px;
 }
+
+
+table.member-content td{
+	line-height: 200%;
+}
+
 
 table.member-content th{
 	color: #04B4AE;
@@ -259,10 +281,10 @@ table.member-content th{
 
 
 
-.border-box{ 
- 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
- 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
- 	box-sizing: border-box;         /* Opera/IE 8+ */
+.border-list{ 
+ 	-webkit-list-sizing: border-list; /* Safari/Chrome, other WebKit */
+ 	-moz-list-sizing: border-list;    /* Firefox, other Gecko */
+ 	list-sizing: border-list;         /* Opera/IE 8+ */
 }
 
 
@@ -276,9 +298,10 @@ ul.switch-list{
 
 ul.switch-list > li{
 	display:inline;
-	padding: -10px;
+	padding: 10px;
 	border: 1px solid #04B4AE;
 	margin: 10px;
+
 }
 
 
@@ -297,4 +320,51 @@ ul.switch-list > li{
 body{
 	font-family: "Raleway", "微軟正黑體";
 }
+
+
+
+.panel-title{
+	position: relative;
+	font-size: 16px;
+	background-color: #04B4AE;
+	padding: 11px 0 11px 0;
+	margin: 0px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+/*
+ * member panel
+ */
+
+.panel-title >li{
+	color: #fff;
+	display: inline;
+	margin: 0 -4px 0 0;
+	padding: 14px;
+	border-right : 1px solid #fff;
+	background-color: #04B4AE;
+}
+
+.panel-title >li:hover, .panel-title >li.selected{
+	cursor: pointer;
+	display: inline;
+	color: #04B4AE;
+	background-color: #fff;
+}
+
+
+.panel-content{
+	margin: 3px 0 0 0;
+	padding: 16px 0 80px 5px;
+	border: 0px;
+	background-color: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+.panel-block.hide{
+	display: none;
+}
+
 
