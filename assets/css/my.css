@@ -235,9 +235,12 @@ p{
  *  member content
  */
 
+table{
+	font-size: 14px;
+}
+
 table.member-content{
 	table-layout:auto;
-	font-size: 14px;
 	list-style: none;
 	word-wrap: break-word; 
 	word-break: normal;
@@ -247,16 +250,11 @@ table.member-content{
 
 table.member-content-list{
 	table-layout:auto;
-	font-size: 14px;
 	list-style: none;
 	word-wrap: break-word; 
 	word-break: normal;
 	margin-left: 10px;
 	margin-top: 20px;
-}
-
-table.member-content-list td{
-	
 }
 
 table.member-content-list.wider td{
@@ -268,15 +266,22 @@ table.member-content-list th{
 	min-width: 80px;
 }
 
-
 table.member-content td{
 	line-height: 200%;
+	padding-bottom: 10px;
+
 }
-
-
 table.member-content th{
 	color: #04B4AE;
 	padding-bottom: 10px;
+}
+
+table.member-content-lefthead td, table.member-content-lefthead th{
+	padding: 12px;
+}
+
+table.member-content-lefthead th{
+	color: #04B4AE;
 }
 
 
