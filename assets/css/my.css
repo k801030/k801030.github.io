@@ -368,8 +368,11 @@ body{
 }
 
 
-.panel-block.hide{
+.panel-block{
 	display: none;
 }
 
+.panel-block.selected{
+	display: block;
+}
 

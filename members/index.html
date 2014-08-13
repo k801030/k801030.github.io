@@ -106,7 +106,7 @@
 					<div class="col-md-12 panel-content">
 
 							<!-- block 1 -->
-							<div class="panel-block" id="panel-1-block">
+							<div class="panel-block selected" id="panel-1-block">
 								<div class="col-md-4">
 								<img class="profile host circular" src="/assets/images/members/host.jpg">
 								</div>
@@ -134,7 +134,7 @@
 							</div>
 
 							<!-- block 2 -->
-							<div class="panel-block hide" id="panel-2-block">	
+							<div class="panel-block" id="panel-2-block">	
 								<div class="col-md-10">
 
 								 <h3>學歷 </h3>
@@ -148,7 +148,7 @@
 							</div>
 
 							<!-- block 3 -->
-							<div class="panel-block hide" id="panel-3-block">	
+							<div class="panel-block" id="panel-3-block">	
 								<div class="col-md-10">
 
 								 <h3>三 </h3>
@@ -158,7 +158,7 @@
 							</div>
 
 							<!-- block 4 -->
-							<div class="panel-block hide" id="panel-4-block">	
+							<div class="panel-block" id="panel-4-block">	
 								<div class="col-md-10">
 
 								 <h3>4 </h3>
@@ -168,7 +168,7 @@
 							</div>
 
 							<!-- block 5 -->
-							<div class="panel-block hide" id="panel-5-block">	
+							<div class="panel-block" id="panel-5-block">	
 								<div class="col-md-10">
 
 								 <h3>5 </h3>
@@ -178,7 +178,7 @@
 							</div>
 
 							<!-- block 6 -->
-							<div class="panel-block hide" id="panel-6-block">	
+							<div class="panel-block" id="panel-6-block">	
 								<div class="col-md-10">
 
 								 <h3>6 </h3>
@@ -952,6 +952,13 @@ $(document).ready(function() {
    $.getScript("/assets/jquery/animate.js");
 });
 
+$('#1').click(function(){
+	panel_set_default($('#1-content'));
+});
+
+$('#3').click(function(){
+	panel_set_default($('#3-content'));
+});
 
 
 

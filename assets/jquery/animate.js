@@ -47,9 +47,17 @@ var default_panel = 0;
 function panel_click(id){	
 	$('.panel-title li').removeClass('selected');
 	$('#'+id).addClass('selected');
-	$('.panel-block').not("#"+id+"-block").addClass('hide');
-	$("#"+id+"-block").removeClass('hide');
+	$('.panel-block').not("#"+id+"-block").removeClass('selected');
+	$("#"+id+"-block").addClass('selected');
 	default_panel = id;
+}
+
+function panel_set_default(obj){
+	var default_panel_title = obj.find('.panel-title').find('li:first-child');
+	default_panel_title.addClass('selected');
+
+	var default_panel_content = obj.find('.panel-block');
+	default_panel_content.addClass('selected');
 }
 
 
