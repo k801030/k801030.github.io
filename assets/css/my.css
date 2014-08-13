@@ -1,4 +1,6 @@
-
+body{
+	font-family:  sans-serif,"微軟正黑體";
+}
 
 
 /* 
@@ -17,7 +19,7 @@
 
 
 .title-bar h1{
-	font-family: "Raleway";
+	font-family: "Raleway" ,sans-serif;
 	padding-left: 110px;
 	font-size: 30px;
 	font-weight: normal;
@@ -119,7 +121,8 @@ a.dropdown-toggle > span{
  */
 
 
-.navigation > li > a { color: #898989; text-transform: uppercase; font-family: "Raleway", sans-serif; font-size: 14px; text-decoration: none; height: 100px; display: inline-block; position: relative; padding-right: -10px; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px; color: #2a2a2a;
+
+.navigation > li > a { color: #898989; text-transform: uppercase; font-family: "Raleway", sans-serif,"微軟正黑體"; font-size: 14px; text-decoration: none; height: 100px; display: inline-block; position: relative; padding-right: -10px; -webkit-perspective: 1000px; -moz-perspective: 1000px; -ms-perspective: 1000px; perspective: 1000px; color: #2a2a2a;
 }
 .navigation > li > a > span.label-nav { float: left; line-height: 20px; display: block; width: 100%; clear: both; margin: 25px 0 0 0;
 }
@@ -189,7 +192,7 @@ a.dropdown-toggle > span{
  */
 
 .side-nav > li > a{
-	color: #bbb; 
+	color: #aaa; 
 }
 
 .side-nav > li:first-child{
@@ -322,17 +325,15 @@ ul.switch-list > li{
 }
 
 
-body{
-	font-family: "Raleway", "微軟正黑體";
-}
+
 
 
 
 .panel-title{
 	position: relative;
+	padding-left: 0px;
 	font-size: 16px;
 	background-color: #04B4AE;
-	padding: 11px 0 11px 0;
 	margin: 0px;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
@@ -343,12 +344,16 @@ body{
  */
 
 .panel-title >li{
+	position: relative;
+	display: block;
+	float: left;
+
 	color: #fff;
-	display: inline;
-	margin: 0 -4px 0 0;
+	
 	padding: 14px;
 	border-right : 1px solid #fff;
 	background-color: #04B4AE;
+
 }
 
 .panel-title >li:hover, .panel-title >li.selected{
@@ -357,6 +362,8 @@ body{
 	color: #04B4AE;
 	background-color: #fff;
 }
+
+
 
 
 .panel-content{

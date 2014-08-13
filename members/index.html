@@ -5,9 +5,13 @@
 	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap.css">
 	<link rel="stylesheet" href="/assets/bootstrap-3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="/assets/css/my.css">
+
 	<script src="/assets/jquery/jquery-2.1.0.min.js"></script>
 	<script src="/assets/bootstrap-3.2.0/js/bootstrap.min.js"></script>
 	<script src="/assets/jquery/content-panel-switcher.js"></script>
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+
 	<title>MEMBERS | 生物力學實驗室 - Biomechanics Laboratory</title>
 </head>
 <body>
@@ -28,7 +32,7 @@
 				
 				<li class="hoverli">
 					<a class="dropdown-toggle" href="/introduction/">
-						<span class="label-nav fff">實驗室介紹</span>
+						<span class="label-nav">實驗室介紹</span>
 						<span class="label-nav-sub">Introduction</span>
       				</a>
 					
@@ -953,11 +957,19 @@ $(document).ready(function() {
 });
 
 $('#1').click(function(){
-	panel_set_default($('#1-content'));
+	var default_panel_title = $('#1-content').find('.panel-title').find('li:first-child');
+	default_panel_title.addClass('selected');
+
+	var default_panel_content = $('#1-content').find('#panel-1-block');
+	default_panel_content.addClass('selected');
 });
 
 $('#3').click(function(){
-	panel_set_default($('#3-content'));
+	var default_panel_title = $('#3-content').find('.panel-title').find('li:first-child');
+	default_panel_title.addClass('selected');
+
+	var default_panel_content = $('#3-content').find('#panel-11-block');
+	default_panel_content.addClass('selected');
 });
 
 

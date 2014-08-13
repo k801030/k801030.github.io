@@ -52,12 +52,5 @@ function panel_click(id){
 	default_panel = id;
 }
 
-function panel_set_default(obj){
-	var default_panel_title = obj.find('.panel-title').find('li:first-child');
-	default_panel_title.addClass('selected');
-
-	var default_panel_content = obj.find('.panel-block');
-	default_panel_content.addClass('selected');
-}
 
 
