@@ -906,7 +906,7 @@ $('#1').click(function(){
 	var default_panel_content = $('#1-content').find('#panel-1-block');
 	default_panel_content.addClass('selected');
 
-	setTimeout(loadiFrame,800);
+	setTimeout(loadiFrame,400);
 });
 
 $('#3').click(function(){
@@ -926,8 +926,9 @@ function loadiFrame(){
 	$('#panel-4-block').load("block-4.html");
 	$('#panel-5-block').load("block-5.html");
 	$('#panel-6-block').load("block-6.html");
-}
 
+	$('#panel-1-block').fadein('slow');
+}
 
 
 
