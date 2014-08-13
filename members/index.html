@@ -16,6 +16,7 @@
 </head>
 <body>
 
+
 <header class="jumbotron subhead">
     <div class="container">
     	<div class="col-md-5">
@@ -895,6 +896,9 @@ $(document).ready(function() {
    $('#1-content').removeClass("show"); //when ready, stop keeping show method
 
    $.getScript("/assets/jquery/animate.js");
+
+   $('#1-content').find('.panel-title').find('li:first-child').addClass('fadein');
+   $('.fadein').delay(300).animate({ opacity: 1 }, 700);
    	
 	loadiFrame();
 });
@@ -927,7 +931,7 @@ function loadiFrame(){
 	$('#panel-5-block').load("block-5.html");
 	$('#panel-6-block').load("block-6.html");
 
-	$('#panel-1-block').fadein('slow');
+
 }
 
 
