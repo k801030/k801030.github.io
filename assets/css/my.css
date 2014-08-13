@@ -245,12 +245,22 @@ table.member-content{
 	margin-top: 20px;
 }
 
+table.member-content-list{
+	table-layout:auto;
+	font-size: 14px;
+	list-style: none;
+	word-wrap: break-word; 
+	word-break: normal;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
 table.member-content-list td{
 	
 }
 
 table.member-content-list.wider td{
-	
+	padding: 5px;
 }
 
 table.member-content-list th{
@@ -259,8 +269,8 @@ table.member-content-list th{
 }
 
 
-table.member-content th{
-	padding: 5px 0 5px 0;
+table.member-content td{
+	line-height: 200%;
 }
 
 
@@ -288,9 +298,10 @@ ul.switch-list{
 
 ul.switch-list > li{
 	display:inline;
-	padding: -10px;
+	padding: 10px;
 	border: 1px solid #04B4AE;
 	margin: 10px;
+
 }
 
 
@@ -309,4 +320,51 @@ ul.switch-list > li{
 body{
 	font-family: "Raleway", "微軟正黑體";
 }
+
+
+
+.panel-title{
+	position: relative;
+	font-size: 16px;
+	background-color: #04B4AE;
+	padding: 11px 0 11px 0;
+	margin: 0px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+/*
+ * member panel
+ */
+
+.panel-title >li{
+	color: #fff;
+	display: inline;
+	margin: 0 -4px 0 0;
+	padding: 14px;
+	border-right : 1px solid #fff;
+	background-color: #04B4AE;
+}
+
+.panel-title >li:hover, .panel-title >li.selected{
+	cursor: pointer;
+	display: inline;
+	color: #04B4AE;
+	background-color: #fff;
+}
+
+
+.panel-content{
+	margin: 3px 0 0 0;
+	padding: 16px 0 80px 5px;
+	border: 0px;
+	background-color: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
+.panel-block.hide{
+	display: none;
+}
+
 
