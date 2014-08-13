@@ -459,13 +459,16 @@
 				</div>
 				<div id="3-content" class="switcher-content">
 					<div class="page-title" >
-						<ul class="switch-list">
-							<li id="switch-list-1" class="switch-list-selected" onclick="switch_button(id);">畢業博士生</a></li>
-							<li id="switch-list-2" onclick="switch_button(id);">畢業碩士生</li>
+						<ul class="col-md-12 panel-title">
+							<li id='panel-11' class="selected" onclick="panel_click(id);">畢業博士生</li>
+							<li id='panel-12' onclick="panel_click(id);">畢業碩士生</li>
 						</ul>
+					
 					</div>
-					<div class="page-i"></div>
-					<div class="page-lead switch-block" id="switch-list-1-block">
+					<div class="col-md-12 panel-content">
+
+					<!-- block 11 -->
+					<div class="panel-block" id="panel-11-block">
 						<div class="person">
 
 							<div class="col-md-11">
@@ -561,8 +564,8 @@
 						</div>
 					</div>
 					
-					<!-- block 2 -->
-					<div class="page-lead switch-block hide" id="switch-list-2-block">
+					<!-- block 12 -->
+					<div class="panel-block" id="panel-12-block">
 						<div class="person">
 							<div class="col-md-11">
 									<table class="table-hover member-content wider">
@@ -919,6 +922,7 @@
 									</table>
 							</div>
 						</div>
+					</div>
 					</div>
 					
 				</div>
