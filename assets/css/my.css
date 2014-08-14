@@ -417,7 +417,7 @@ iframe{
 
 .gallery-frame p{
 	font-size: 9px;
-	color: rgba(0,0,0,);
+	color: rgba(0,0,0,1);
 	margin: 5px 0 0 0;
 	text-align: center;
 }
@@ -441,4 +441,14 @@ iframe{
 
 .gallery-preview img{
 	width: 100%;
+}
+
+.page-cover{
+	overflow: hidden;
+	width: 240;
+	height: 360;
+	background-color: #ddd;
+}
+.page-cover img{
+	height: 100%;
 }

@@ -99,17 +99,24 @@
 			<div id="switcher-panel"></div>
 			
 			<div id="1-content" class="switcher-content show">
-				<div class="page-title">
-					生物力學實驗室
-				</div>
-				<div class="page-i"></div>
-				<div class="page-lead">
-					本實驗室主要可以進行醫療器材之加工、<br/>
+				<div class="col-md-6">
+					<div class="page-title">
+						生物力學實驗室
+					</div>
+					<div class="page-i"></div>
+					<div class="page-lead">
+						本實驗室主要可以進行醫療器材之加工、<br/>
 
-					4000牛頓以下之材料測試行為、光纖感測器製造、<br/>
+						4000牛頓以下之材料測試行為、光纖感測器製造、<br/>
 
-					以及生物試樣微小結構觀察。<br/>
+						以及生物試樣微小結構觀察。<br/>
+					</div>
 				</div>
+				<div class="col-md-3"><div class="page-cover">
+						<!-- default image -->
+						<img src="/assets/images/introduction_cover.jpg">	
+				</div></div>
+				
 
 				<div class="page-title">
 					實驗室器材
@@ -320,15 +327,16 @@ $('.side-nav').find('li').click(function(){
 
 function onload_animate(){
 	var preview = $('.gallery-preview');
+	preview.css({ 'opacity' : 0});
    $('.gallery-frame').hover(function(){
    		preview.stop(); // stop pre animation
    		
 
 		var source = $(this).find('img').attr('src');
-		var target = preview.find('img').attr('src',source);
-		preview.animate({ opacity: 1 }, 0);
+		preview.find('img').attr('src',source);
+		preview.animate({opacity:1},0);
 	},function(){
-		//preview.css({ 'opacity': ''});
+		preview.animate({opacity:0},300);
 	});
 }
 
