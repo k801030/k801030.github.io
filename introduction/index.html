@@ -98,47 +98,120 @@
 			<!-- use to display -->
 			<div id="switcher-panel"></div>
 			
-				<div id="1-content" class="switcher-content show">
-					<div class="page-title">
-						生物力學實驗室
-					</div>
-					<div class="page-i"></div>
-					<div class="page-lead">
-						本實驗室主要可以進行醫療器材之加工、<br/>
+			<div id="1-content" class="switcher-content show">
+				<div class="page-title">
+					生物力學實驗室
+				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
+					本實驗室主要可以進行醫療器材之加工、<br/>
 
-						4000牛頓以下之材料測試行為、光纖感測器製造、<br/>
+					4000牛頓以下之材料測試行為、光纖感測器製造、<br/>
 
-						以及生物試樣微小結構觀察。<br/>
-					</div>
-					<div id="gallery"></div>
+					以及生物試樣微小結構觀察。<br/>
 				</div>
 
-				<div id="2-content" class="switcher-content">
-					<div class="page-title" >
-						材料測試實驗室
-					</div>
-					<div class="page-i"></div>
-					<div class="page-lead">
-						本實驗室主要可以進行高強度（10000牛頓）<br/>
+				<div class="page-title">
+					實驗室器材
+				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
 
-						之醫療器材測試，混成測試，X光片拍攝及沖洗，<br/>
-
-						連續衝擊負載測試。<br/>
+				<div class="gallery col-md-6">
+					<div class="col-md-3">
+							<div class="gallery-frame">
+								<div class="frame-center">
+									<img src="/assets/images/introduction/1-miller.jpg">
+								</div>
+								<p>鑽銑床</p>
+							</div>
 					</div>
+
+					<div class="col-md-3">
+						<div class="gallery-frame">
+							<div class="frame-center">
+								<img src="/assets/images/introduction/1-oscilloscope.jpg">
+							</div>
+								<p>鑽銑床</p>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="gallery-frame">
+							<div class="frame-center">
+								<img src="/assets/images/introduction/1-microscope.jpg">
+							</div>
+								<p>鑽銑床</p>							
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="gallery-frame">
+							<div class="frame-center">
+								<img src="/assets/images/introduction/1-microscope.jpg">
+							</div>
+								<p>鑽銑床</p>							
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="gallery-frame">
+							<div class="frame-center">
+								<img src="/assets/images/introduction/1-cut.jpg">
+							</div>
+								<p>切鑽石用</p>							
+						</div>
+					</div>
+
+					<div class="col-md-3">
+
+						<div class="gallery-frame">
+							<div class="frame-center">
+								<img src="/assets/images/introduction/1-microscope.jpg">
+							</div>
+								<p>鑽銑床</p>							
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="gallery-preview"><div class="inner">
+						<!-- default image -->
+						<img src="/assets/images/introduction_cover.jpg">	
+					</div></div>
+				</div>
+
 					
 				</div>
-				<div id="3-content" class="switcher-content">
-					<div class="page-title" >
-						電腦輔助系統實驗室
-					</div>
-					<div class="page-i"></div>
-					<div class="page-lead">
-						本實驗室主要可以進行醫學影像之分析，<br/>
+			</div>
+			</div>
 
-						醫學導航器械之研發，並實際應用於臨床手術。<br/>
-					</div>
-					
+			<div id="2-content" class="switcher-content">
+				<div class="page-title" >
+					材料測試實驗室
 				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
+					本實驗室主要可以進行高強度（10000牛頓）<br/>
+
+					之醫療器材測試，混成測試，X光片拍攝及沖洗，<br/>
+
+					連續衝擊負載測試。<br/>
+				</div>
+				
+			</div>
+			<div id="3-content" class="switcher-content">
+				<div class="page-title">
+					電腦輔助系統實驗室
+				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
+					本實驗室主要可以進行醫學影像之分析，<br/>
+
+					醫學導航器械之研發，並實際應用於臨床手術。<br/>
+				</div>
+				
+			</div>
 		</div>
 	</div>
 </div>
@@ -158,6 +231,17 @@ $('#gallery').load("/assets/load/gallery.html");
 $(document).ready(function() {
    jcps.fader(300, '#switcher-panel');
    $('#1-content').removeClass("show"); //when ready, stop keeping show method
+   var preview = $('.gallery-preview');
+   $('.gallery-frame').hover(function(){
+   		preview.stop(); // stop pre animation
+   		
+
+		var source = $(this).find('img').attr('src');
+		var target = preview.find('img').attr('src',source);
+		preview.animate({ opacity: 1 }, 300);
+	},function(){
+		preview.css({ 'opacity': ''});
+	});
 });
 
 </script>

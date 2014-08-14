@@ -8,7 +8,6 @@ $('.title-bar h1').delay(300).animate({
   duration: 500
 });
 
-
 //
 $('.side-nav li').click(function(){
 	$('.side-nav li').css({"border-left" : "solid 0px #fff"});
@@ -51,6 +50,7 @@ function panel_click(id){
 	$("#"+id+"-block").addClass('selected');
 	default_panel = id;
 }
+
 
 
 
