@@ -118,6 +118,7 @@
 				<div class="page-lead">
 
 				<div class="gallery col-md-6">
+					<!-- image 1 -->
 					<div class="col-md-4">
 							<div class="gallery-frame">
 								<div class="frame-center">
@@ -127,6 +128,7 @@
 							</div>
 					</div>
 
+					<!-- image 2 -->
 					<div class="col-md-4">
 						<div class="gallery-frame">
 							<div class="frame-center">
@@ -145,6 +147,7 @@
 						</div>
 					</div>
 
+					<!-- image 3 -->
 					<div class="col-md-4">
 						<div class="gallery-frame">
 							<div class="frame-center">
@@ -163,7 +166,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3">
+					<div class="col-md-4">
 
 						<div class="gallery-frame">
 							<div class="frame-center">
@@ -184,6 +187,7 @@
 					
 				</div>
 			</div>
+
 			</div>
 
 			<div id="2-content" class="switcher-content">
@@ -198,7 +202,45 @@
 
 					連續衝擊負載測試。<br/>
 				</div>
-				
+
+				<div class="page-title">
+					實驗室器材
+				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
+
+				<div class="gallery col-md-6">
+
+					<!-- image 1 -->
+					<div class="col-md-4">
+							<div class="gallery-frame">
+								<div class="frame-center">
+									<img src="/assets/images/introduction/1-miller.jpg">
+								</div>
+								<p>鑽銑床</p>
+							</div>
+					</div>
+
+					<!-- image 2 -->
+					<div class="col-md-4">
+							<div class="gallery-frame">
+								<div class="frame-center">
+									<img src="/assets/images/introduction/1-cut.jpg">
+								</div>
+								<p>切切切</p>
+							</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="gallery-preview"><div class="inner">
+						<!-- default image -->
+						<img src="/assets/images/introduction_cover.jpg">	
+					</div></div>
+				</div>
+				</div>
+
 			</div>
 			<div id="3-content" class="switcher-content">
 				<div class="page-title">
@@ -211,6 +253,44 @@
 					醫學導航器械之研發，並實際應用於臨床手術。<br/>
 				</div>
 				
+				<div class="page-title">
+					實驗室器材
+				</div>
+				<div class="page-i"></div>
+				<div class="page-lead">
+
+				<div class="gallery col-md-6">
+
+					<!-- image 1 -->
+					<div class="col-md-4">
+							<div class="gallery-frame">
+								<div class="frame-center">
+									<img src="/assets/images/introduction/1-cut.jpg">
+								</div>
+								<p>鑽石切</p>
+							</div>
+					</div>
+
+					<!-- image 2 -->
+					<div class="col-md-4">
+							<div class="gallery-frame">
+								<div class="frame-center">
+									<img src="/assets/images/introduction/1-miller.jpg">
+								</div>
+								<p>鑽銑床</p>
+							</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="gallery-preview"><div class="inner">
+						<!-- default image -->
+						<img src="/assets/images/introduction_cover.jpg">	
+					</div></div>
+				</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -231,20 +311,27 @@ $('#gallery').load("/assets/load/gallery.html");
 $(document).ready(function() {
    jcps.fader(300, '#switcher-panel');
    $('#1-content').removeClass("show"); //when ready, stop keeping show method
-   var preview = $('.gallery-preview');
+   onload_animate();
+});
+
+$('.side-nav').find('li').click(function(){
+	setTimeout(onload_animate,350);
+});
+
+function onload_animate(){
+	var preview = $('.gallery-preview');
    $('.gallery-frame').hover(function(){
    		preview.stop(); // stop pre animation
    		
 
 		var source = $(this).find('img').attr('src');
 		var target = preview.find('img').attr('src',source);
-		preview.animate({ opacity: 1 }, 300);
+		preview.animate({ opacity: 1 }, 0);
 	},function(){
-		preview.css({ 'opacity': ''});
+		//preview.css({ 'opacity': ''});
 	});
-});
+}
 
 </script>
-
 </body>
 </html>
