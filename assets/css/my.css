@@ -2,6 +2,12 @@ body{
 	font-family:  sans-serif,"微軟正黑體";
 }
 
+a.link{
+	color: #03827e;
+}
+a.link:hover{
+	color: #04B4AE;
+}
 
 /* 
  *  title bar
@@ -20,7 +26,7 @@ body{
 
 .title-bar h1{
 	font-family: "Raleway" ,sans-serif;
-	padding-left: 20px;
+	padding-left: 110px;
 	font-size: 30px;
 	font-weight: normal;
 	padding-bottom: 15px;
@@ -407,11 +413,14 @@ iframe{
 
 .gallery-frame{
 	width: 80px;
-	height: 140px;
+	height: 160px;
 	border-radius: 6px;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 	overflow: hidden;
 	margin: 0 0 14px 0;
+}
+.gallery-frame:hover{
+	box-shadow: 0px 0px 2px 2px #04B4AE;
 }
 
 
