@@ -1,0 +1,72 @@
+body {
+	background-attachment: fixed; 
+	background-image:url("http://i.imgur.com/yMM3csU.jpg");
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-color: #000000; 
+}  
+
+html {
+	cursor: crosshair;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+
+p {
+	border-width: 3px;
+	border-color: #AAAAAA;
+	border-radius: 6px;
+	border-style: solid;
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 700px;
+	padding: 10px;
+	margin:0px auto;
+	font-size: 13px ;
+	font-weight: 100; 
+	color: #444444;
+}
+
+#char2 {
+	height: 825px;
+}
+
+#author2 {
+	height: 390px;
+}
+
+#plot {
+	width: 500px;
+	margin:0px auto;
+}
+
+#char {
+	width: 500px;
+	margin:0px auto;
+}
+
+#author{
+	width: 500px;
+	margin:0px auto;
+}
+
+#testimg{
+	float: left;
+}
+#video{
+	width: 500px;
+	margin:0px auto;
+}
+
+#bgm{
+	border-radius: 6px;
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 180px;
+	height: 60px;
+	padding: 5px;
+	margin:0px auto;
+	text-align: center;
+}

@@ -1,0 +1,142 @@
+<html>
+
+
+<head>
+<title>
+
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<style type="text/css">
+
+
+
+#container{
+    border:1px #666 dashed;
+    width:500px;
+    margin:0 auto;
+ 
+}
+#headbox{
+    width:1600px;
+    height:500px;
+    margin:0 auto;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: absolute;
+    background-image:url('love2.jpg');
+　	background-repeat:no-repeat;
+	background-size: cover;
+    z-index: 0;
+ }
+#sidebarleft1{
+    width:190px;
+    height:260px;
+    border:0px #666 dashed;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    top:500px;
+    left: 40px;
+    position: absolute;
+    float:left;
+}
+#sidebarleft2{
+    width:260px;
+    height:260px;
+    border:0px #666 dashed;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    top:900px;
+    left: 50px;
+    position: absolute;
+    float:left;
+}
+#sidebarleft3{
+    width:190px;
+    height:260px;
+    border:0px #666 dashed;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    top:1300px;
+    left: 50px;
+    position: absolute;
+    float:left;
+ }
+#sidebody{
+    width:290px;
+    height:260px;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    float:center;
+}
+#clear{
+    clear:both;
+}
+#footer{
+    width:300px;
+    height:50px;
+    border:1px #666 dashed;
+    margin-top:5px;
+    margin-left:5px;
+    margin-bottom:5px;
+    position: absolute;
+    top: 1500px;
+    z-index: -1;
+}
+#search-form { margin:70px 0 100px 170px; width:690px; overflow:hidden; }
+
+#search-page-border { border:1px solid #dbdbdb; border-radius:4px; padding:7px; float:left; }
+
+.search-terms { font-size:26px; border:none; }
+
+#search-which { margin:0 10px; padding-left:8px; border-left:1px solid #dbdbdb; }
+
+#search-which, select option { font-size:26px; }
+
+#search-submit { padding:12px 30px; margin-left:20px; font-size:20px; float:left; color:#ffffff; background:black; border:none; border-radius: 3px; }
+
+.accessibly-hidden {left: -999em;position: absolute;}
+
+table{
+    position: absolute;
+    right: auto;
+    bottom: 0px;
+    top: 600px;
+    left: 500px;
+    border:1px #666 dashed;
+    z-index: -2;
+}
+h2{
+    position: absolute;
+    right: auto;
+    bottom: 0px;
+    top: 550px;
+    left: 700px;
+}
+
+form{
+    position: absolute;
+    right: 0px;
+    bottom: auto;
+    top: 0px;
+    left: 150px;
+}
+
+h1{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 200px;
+    left: 30px;
+}
+
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<script type = "type/javascript" src = "js/jQuery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+<head>
+<link rel=stylesheet type="text/css" href="maina.css">
+<title>PK</title>
+<style type = "text/css">
+</style>
+</head>
+<body>
+	<br><br>
+<div class = "container">
+<script>
+	function attack(name1,name2,hp1,hp2,ak1,ak2){
+		hp2 -= ak1;
+		if(hp2<0){
+			hp2=0;
+		}
+		var output = name1+"有效攻擊，"+name2+"的hp損失"+ak1+"，剩下"+hp2;
+		document.write(output + '</br>');
+		return hp2;
+	}
+	function getHp(){
+		var hp = Math.floor(Math.random()*750);
+		return hp;
+	}
+	function getCompetitor(){
+		var competitor = Math.floor(Math.random()*10);
+		if(competitor>=8&&competitor<10){
+			competitor = competitor - 2;
+		}
+		else if(competitor>=10){
+			competitor = competitor - 3;
+		}
+		
+		return competitor;
+	}
+	var player = new Array(8);
+	var hp = new Array(8);
+	player = ['林楷翊','張芸瑄','潔西卡','王鼎元','徐紹軒','施宗佑','賴柏霖','簡瑋辰'];
+	var ak = new Array(8);
+	ak = [50,45,55,60,100,70,65,85];
+	var i;
+	for(i=0;i<8;i++){
+		hp[i] = getHp();
+	}
+
+	var c1 = getCompetitor();
+	var competitor1 = player[c1];
+	var c1hp = hp[c1];
+	var c1ak = ak[c1];
+
+	var c2 = getCompetitor();
+	while(c2==c1){
+		c2 = getCompetitor();
+	}
+	var competitor2 = player[c2];
+	var c2hp = hp[c2];
+	var c2ak = ak[c2];
+	document.write(competitor1+"&nbsp"+"&nbsp"+"&nbsp"+"hp is"+c1hp+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp");
+	document.write(competitor2+"&nbsp"+"&nbsp"+"&nbsp"+"hp is"+c2hp+'</br>');
+	switch (c1){
+		case 0:
+		document.write('<img src = "12468098_1275584059122608_1166545533_n.jpg" width="500px" height="1000px">');
+		break;
+		case 1:
+		document.write('<img src = "12463451_1275584979122516_210278736_n.jpg" width="500px" height="1000px">');
+		break;
+		case 2:
+		document.write('<img src = "12468130_1275584865789194_1474715546_n.jpg" width="500px" height="1000px">');
+		break;
+		case 3:
+		document.write('<img src = "12463920_1275584122455935_1514928741_n.jpg" width="500px" height="1000px">');
+		break;
+		case 4:
+		document.write('<img src = "abc.jpg" width="500px" height="1000px">');
+		break;
+		case 5:
+		document.write('<img src = "12463972_1275584782455869_1361980109_n.jpg" width="500px" height="1000px">');
+		break;
+		case 6:
+		document.write('<img src = "12483701_1275584909122523_1297871292_n.jpg" width="500px" height="1000px">');
+		break;
+		case 7:
+		document.write('<img src = "12459720_1275584845789196_1241014458_n.jpg" width="500px" height="1000px">');
+		break;
+	}
+
+	for(i=0;i<25;i++){
+		document.write("&nbsp");
+	}
+
+	switch (c2){
+		case 0:
+		document.write('<img src = "12468098_1275584059122608_1166545533_n.jpg" width="500px" height="1000px">');
+		break;
+		case 1:
+		document.write('<img src = "12463451_1275584979122516_210278736_n.jpg" width="500px" height="1000px">');
+		break;
+		case 2:
+		document.write('<img src = "12468130_1275584865789194_1474715546_n.jpg" width="500px" height="1000px">');
+		break;
+		case 3:
+		document.write('<img src = "12463920_1275584122455935_1514928741_n.jpg" width="500px" height="1000px">');
+		break;
+		case 4:
+		document.write('<img src = "abc.jpg" width="500px" height="1000px">');
+		break;
+		case 5:
+		document.write('<img src = "12463972_1275584782455869_1361980109_n.jpg" width="500px" height="1000px">');
+		break;
+		case 6:
+		document.write('<img src = "12483701_1275584909122523_1297871292_n.jpg" width="500px" height="1000px">');
+		break;
+		case 7:
+		document.write('<img src = "12459720_1275584845789196_1241014458_n.jpg" width="500px" height="1000px">');
+		break;
+	}
+	document.write('</br>');
+	do{
+		c1hp = attack(competitor1, competitor2,c1hp,c2hp,c1ak,c2ak);
+		if(c1hp<=0){
+			break;
+		}
+		c2hp = attack(competitor2,competitor1,c2hp,c1hp,c2ak,c1ak);
+		if(c2hp<=0){
+			break;
+		}
+	}while(c1hp>0&&c2hp>0)
+	if(c1hp<=0){
+		document.write("winner is "+competitor1+'</br>');
+		switch(c1){
+			case 0:
+			setTimeout('alert("林楷翊")',1000);
+			break;
+			case 1:
+			setTimeout('alert("張芸瑄")',1000);
+			break;
+			case 2:
+			setTimeout('alert("潔西卡")',1000);
+			break;
+			case 3:
+			setTimeout('alert("王鼎元")',1000);
+			break;
+			case 4:
+			setTimeout('alert("徐紹軒")',1000);
+			break;
+			case 5:
+			setTimeout('alert("施宗佑")',1000);
+			break;
+			case 6:
+			setTimeout('alert("賴柏霖")',1000);
+			break;
+			case 7:
+			setTimeout('alert("簡瑋辰")',1000);
+			break;
+		}
+	}
+	else{
+		document.write("winner is "+competitor2+'</br>');
+		switch(c2){
+			case 0:
+			setTimeout('alert("林楷翊")',1000);
+			break;
+			case 1:
+			setTimeout('alert("張芸瑄")',1000);
+			break;
+			case 2:
+			setTimeout('alert("潔西卡")',1000);
+			break;
+			case 3:
+			setTimeout('alert("王鼎元")',1000);
+			break;
+			case 4:
+			setTimeout('alert("徐紹軒")',1000);
+			break;
+			case 5:
+			setTimeout('alert("施宗佑")',1000);
+			break;
+			case 6:
+			setTimeout('alert("賴柏霖")',1000);
+			break;
+			case 7:
+			setTimeout('alert("簡瑋辰")',1000);
+			break;
+		}
+	}
+
+	</script>
+</div>
+</body>
+</html>

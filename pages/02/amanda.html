@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<link rel=stylesheet type="text/css" href="body.css">
+	<meta charset="UTF-8">
+	<h1>哈囉我是欣宜!!</h1>
+	<a href="https://www.facebook.com/profile.php?id=100000444007981">
+	<img src="IMAG0510.jpg" height="500px" width="auto" align="right" border=10></a>
+
+	<h2> Want to know more about me?</h2>
+	<h4><ul>
+		<li>水瓶座 1997/2/15
+		<li>愛運動的陽光女孩
+		<li>愛唱歌的樂團主唱
+		<li>愛跳舞的小過動兒
+		</ul>
+
+		
+		<p id="test" onmouseover="showMouseOver(this)" onmouseout="showMouseOut(this)">想知道我有什麼不會的嗎?</p>
+    <script>
+    function showMouseOver(element) {
+        element.innerHTML = "答案是沒有!";
+    }
+    function showMouseOut(element) {
+        element.innerHTML = "想知道我有什麼不會的嗎?";
+    }
+    </script>
+    </h4>
+
+	<marquee onMouseOver="this.stop()" onMouseOut="this.start()"
+	direction="left" scrollamount="3" height="500" width="1000"behavior="alternate" >
+	<img src="http://www.welovestyles.com/wp-content/uploads/2015/11/See-You-Soons.jpg" width="500px" height="312px"> 
+	</marquee>
+	<form>
+	<input type="button" value="我有興趣"
+	onClick=" var name = prompt('想進一步認識嗎?留下你的名字吧:' , ' 你的名字') ; alert('很高興認識你! ' + name) ">
+	</form>
+	
+</body>
+</html>

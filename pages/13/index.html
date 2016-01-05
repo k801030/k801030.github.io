@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<p1><p2>N</p2><p3>T</p3><p4>U</p4><p5>I</p5><p6>M</p6></p1>
+    <h1>Dice Roller</h1>
+    <link rel="stylesheet" type="text/css" href="h1.css">
+</head>
+<body>
+    <form onsubmit="submitForm('dice_input')">
+        骰子面數: <input id="dice_input" type="text">
+    </form>
+
+    <form onsubmit="submitForm('number_input')">
+        骰子顆數: <input id="number_input" type="text">
+    </form>
+
+    <form onsubmit="submitForm('fix_input')">
+        結果修正: <input id="fix_input" type="text">
+        <button value="roll" onclick="playSound();">斗羅!!</button>
+        <div id="sounds"></div> 
+    </form>
+    <script>
+	function playSound(){
+		var music=new array("35914.mp3");
+		document.getElementById("sounds").innerHTML = "<embed width=0 height=0 src="+music[0]+" autostart='true'></embed>";
+	   }
+    function submitForm() {
+       var dx=Number(document.getElementById("dice_input").value);
+       var num=Number(document.getElementById("number_input").value);
+       var fix=Number(document.getElementById("fix_input").value);
+       var result_float,result=0;
+       for(var i = 0; i<num; i++){
+         result_float = Math.random()*dx+1;
+         result = result + parseInt(result_float, 10);
+       }
+       result = result + fix;    
+       alert("your " + num + "D" + dx + "+" + fix + " rolled a " + result  );
+    }
+    </script>
+</body>
+
+</html>

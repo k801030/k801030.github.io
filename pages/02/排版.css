@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Welcome</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<style type="text/css">
+#container{
+    border:5px #666 dashed;
+    position: center;
+    width:500px;
+    margin:0 auto;
+}
+
+#headbox{
+    width:200px;
+    height:120px;
+    color: Skyblue;
+    background-image: Skyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: left 
+    margin:0 auto;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#sidebar_left1{
+    width:100px;
+    height:260px;
+    border:1px #666 dashed;
+    background-color: Yellow;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+#sidebar_left2{
+    width:100px;
+    height:260px;
+    border:1px #666 dashed;
+    background-color: Yellow;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: absolute;
+    top: 800px;
+    left: 50px;
+}
+#sidebar_right{
+    width:100px;
+    height:260px;
+    border:1px #666 dashed;
+    background-color: Yellow;
+    margin-right:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    float:right;
+}
+#sidebody{
+    width:270px;
+    height:260px;
+    border:1px #666 dashed;
+    background-color: Olive;
+    float: right;
+}
+#clear{
+    clear:both;
+}
+#footer{
+    width:700px;
+    height:200px;
+    border:1px #666 dashed;
+    background-image: url('IMAG0851.jpg');
+    background-size: cover;
+    position: absolute;
+    margin-top:5px;
+    margin-left:5px;
+    margin-bottom:5px;
+    bottom:20px;
+    clear: both;
+}

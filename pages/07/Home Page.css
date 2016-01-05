@@ -1,0 +1,86 @@
+#Breakfast {
+	position:absolute;
+	top: calc(50% - 300px);
+	left: calc(50% - 300px);
+}
+#Main {
+	position:absolute; 
+	top: calc(50% - 300px);
+	right: calc(50% - 300px); 
+}
+#Snack {
+	position:absolute; 
+	bottom: calc(50% - 300px);
+	left: calc(50% - 300px);
+}
+#Drink {
+	position:absolute; 
+	bottom: calc(50% - 300px);
+	right: calc(50% - 300px);
+}
+#food1 {
+	position:absolute;
+	top: calc(50% - 300px);
+	left: calc(50% - 300px);
+	background: rgb(255, 255, 255);
+	width: 200px;
+	height: 200px;
+	border:1px solid #000;
+	opacity: 0;
+	background-color: #ff8080;
+}
+#food2 {
+	position:absolute;
+	top: calc(50% - 300px);
+	right: calc(50% - 300px);
+	background: rgb(255, 255, 255);
+	width: 200px;
+	height: 200px;
+	border:1px solid #000;
+	opacity: 0;
+	background-color: #ff8080;
+}
+#food3 {
+	position:absolute;
+	bottom: calc(50% - 300px);
+	left: calc(50% - 300px);
+	background: rgb(255, 255, 255);
+	width: 200px;
+	height: 200px;
+	border:1px solid #000;
+	opacity: 0;
+	background-color: #ff8080;
+}
+#food4 {
+	position:absolute;
+	bottom: calc(50% - 300px);
+	right: calc(50% - 300px);
+	background: rgb(255, 255, 255);
+	width: 200px;
+	height: 200px;
+	border:1px solid #000;
+	opacity: 0;
+	background-color: #ff8080;
+}
+.Title {
+	position:absolute;
+	top: 45px;
+	left: 50%;
+	font-size: 55px;
+}
+.Photo {
+	position:absolute;
+	width: 250px; 
+	height: 250px;
+	top: 5%;
+	left: 5%;
+}
+.Info {
+	position:absolute;
+	top: 50%;
+	left: 6%;
+	font-size: 28px;
+}
+.Food {
+	background-color: blue;
+}

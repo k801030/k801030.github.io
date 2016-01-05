@@ -1,0 +1,36 @@
+body {
+    background-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdhqMmydjymYZx8NucoZvBpjf87EqHbg_5PsyFLA16x19Ld6uc)
+    ;
+    background-repeat:no-repeat 
+    ;
+    background-position:center
+    ;
+    background-attachment:fixed
+    ;
+    background-size:1265px auto
+    ;
+}
+
+
+h1{
+	position:relative;
+	top:75px;
+	left:200px;
+}
+
+h2{
+	position:relative;
+	top:125px;
+	left:200px;
+}
+
+h3 {
+	position:relative;
+	top:175px;
+	left:200px;
+}
+#test{
+	position:relative;
+	top:65px;
+	left:40px;
+}
