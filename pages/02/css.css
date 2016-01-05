@@ -1,0 +1,30 @@
+body{background-image:url(background.jpg);
+background-size: 1450px 1150px}
+h1{color: white;
+	position: absolute;
+    right: auto;
+    bottom: auto;
+    top: auto;
+    left: 500px;
+}
+h2{color: white;
+	position: absolute;
+    right: auto;
+    bottom: auto;
+    top: 80;
+    left: 440px;
+}
+
+h4{color: white;
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    top: 100;
+    left: 500px;
+}
+form{position: absolute;
+    right: auto;
+    bottom: auto;
+    top: 300;
+    left: 560px;
+}

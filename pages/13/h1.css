@@ -1,0 +1,27 @@
+h1{
+	color:blue;
+}
+h1{ 
+	cursor: move; 
+}
+p2{
+	color:red;
+}
+p3{
+	color:orange;
+}
+p4{
+	color:green;
+}
+p5{
+	color:blue;
+}
+p6{
+	color:purple;
+}
+p1 {
+	font-size:3em;
+}
+p7{
+	border-style:double;
+}

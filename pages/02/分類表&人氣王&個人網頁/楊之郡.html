@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel=stylesheet type="text/css" href="個人網頁.css">
+<meta charset="UTF-8">
+</head>
+
+<body>
+<br>
+<h1>哈囉我是之郡!!</h1>
+<a href="https://www.facebook.com/profile.php?id=100002569708373">
+<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11224063_843125572449758_9070741089133992638_n.jpg?oh=cf395aa4bfd67ccc26d88c115442037d&oe=570BC7C3" height="500px" width="auto" align="right" border=10></a>
+<h2> Want to know more about me?</h2>
+<h3>
+<ul>
+<li>水瓶座 1997/02/03
+<li>愛打排球的陽光男孩
+<li>喜歡彈吉他唱歌
+<li>想要四處旅行
+</ul>
+
+<p id="test" onmouseover="showMouseOver(this)" onmouseout="showMouseOut(this)">想更認識我一點嗎?</p>
+<script>
+function showMouseOver(element) {
+element.innerHTML = "請點最下方的我有興趣or大頭貼喔!";
+}
+function showMouseOut(element) {
+element.innerHTML = "想更認識我一點嗎?";
+}
+</script>
+</h3>
+
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()"
+direction="left" scrollamount="3" height="500" width="1000"behavior="alternate" >
+<br><br><br><br><br><br>
+<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11241431_843120519116930_8360118630461611991_n.jpg?oh=70674d47d490faa99cc29a3818d5ddb1&oe=5709EFE3" width="300px" height="300px">
+</marquee>
+
+<form>
+<input type="button" value="我有興趣"
+onClick=" var name = prompt('想進一步認識嗎?留下你的名字吧:' , ' 你的名字') ; alert('很高興認識你! ' + name) ">
+</form>
+
+</body>
+</html>

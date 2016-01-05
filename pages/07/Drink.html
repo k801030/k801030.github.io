@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="Home Page.css">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor="#F3E2A9">
+	<a href="Home Page.html"><img src="Home.png" id="Home"></a>
+    <img src="Chen.jpg" id="Breakfast" width="200px" height="200px">
+  	<img src="Waffle.jpg" id="Main" width="200px" height="200px">
+    <img src="Milkshake.jpg" id="Snack" width="200px" height="200px">
+    <img src="Taiyi.jpg" id="Drink" width="200px" height="200px">
+    <div id="food1" onmouseenter="Food1()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">陳三鼎</h1>
+    	<img src="Drink1.jpg" class="Photo">
+    	<p class="Info">
+    	只買一種飲料 (阿其實他賣很多種)
+    	<br/><br/>只是大家不會去買別的
+    	<br/><br/><br/><br/>推薦喝: 招牌青蛙撞奶 
+    	</p>
+    </div>
+    <div id="food2" onmouseenter="Food2()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">小木屋鬆餅</h1>
+    	<img src="Drink2.jpg" class="Photo">
+    	<p class="Info">
+    	排隊排超級無敵無敵久
+    	<br/><br/>但很好吃很值得
+    	<br/><br/><br/><br/>
+    	推薦吃: 卡斯達巧克力鬆餅 <br/>(學生證還可以折$5)
+    	</p>
+    </div>
+    <div id="food3" onmouseenter="Food3()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">迷克夏</h1>
+    	<img src="Drink3.png" class="Photo">
+    	<p class="Info">
+    	牛奶是來自綠光牧場，品質有絕對的保證
+    	<br/><br/>比 X X 營更有品質保障
+    	<br/><br/><br/><br/>推薦吃: 珍珠紅茶拿鐵 or 芋頭牛奶
+    	</p>
+    </div>
+    <div id="food4" onmouseenter="Food4()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">臺一</h1>
+    	<img src="Drink4.jpg" class="Photo">
+    	<p class="Info">
+    	老字號甜品，夏天吃挫冰，冬天吃湯圓
+    	<br/><br/>花生湯也不錯
+    	<br/><br/><br/><br/>推薦吃: 紅豆湯+湯圓 (冬至吃讚讚)
+    	</p>
+    </div>
+
+
+    <script>
+	var op = 0;
+	var size = 200;
+ 	function Food1() {
+		var element = document.getElementById("food1");
+		if(op < 1){
+			op =  op + 0.05; 
+			element.style.opacity = op;
+			setTimeout(Food1, 50);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food1, 20);
+		} 
+    }
+  
+
+    function Food2() {
+		var element = document.getElementById("food2");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food2, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food2, 20);
+		} 
+    }
+
+    function Food3() {
+		var element = document.getElementById("food3");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food3, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food3, 20);
+		} 
+    }
+
+    function Food4() {
+		var element = document.getElementById("food4");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food4, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food4, 20);
+		} 
+    }
+
+    function showMouseLeave(element) {
+    	size = 600;
+    	op = 1;
+		setTimeout(function(){
+			size = 200;
+			op = 0;
+			element.style.width = size+"px";
+			element.style.height = size+"px";
+			element.style.opacity = op;
+		}, 51);
+    }
+
+    </script>
+</body>
+
+</html>

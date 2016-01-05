@@ -1,0 +1,17 @@
+
+body{
+color : Black;
+text-align: center;
+line-height: 50px;
+background-image : url('IMAG0852.jpg'); /*背景圖存放路徑*/
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+h1{
+	color: White;
+	text-align: left;
+}
+h2{
+	color: Yellow;
+}

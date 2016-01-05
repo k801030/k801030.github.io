@@ -1,0 +1,24 @@
+.nav h1 {
+  color: #5a5a5a;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.intro{
+    background-color:#efefef;
+    border-bottom:1px solid #dbdbdb;
+}
+.intro h2{
+    margin-right: outo;
+  margin-left: outo;
+    color:#393c3d;
+    font-size:24px;
+}
+.intro p{
+    margin-right: outo;
+  margin-left: outo;
+    font-size:15px;
+    margin-bottom:13px;
+}

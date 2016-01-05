@@ -1,0 +1,17 @@
+body{
+	text-align:center;
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	background-size:5500px auto;
+	font-size:24px;
+}
+.container{
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-left:25%; 
+	margin-right:25%; 
+	font-size:24px;
+	font-color:#FFFFFF;
+	background-color: rgba(255,255,255,.5);
+	position:relative;
+}

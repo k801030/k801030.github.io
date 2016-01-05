@@ -1,0 +1,78 @@
+
+.nav{
+    background-color: black;
+}
+.nav a {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://abc.2008php.com/2013_Website_appreciate/2013-08-03/20130803151135.jpg');
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.jumbotron .container {
+  position: relative;
+  padding-left: 50px;
+  padding-top:10px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 60px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: black;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: gray;
+}
+.neighborhood-guides {
+    background-image:url('http://demacia.hk/wp-content/uploads/2015/03/32715_%E5%8F%AC%E5%96%9A%E5%B3%BD%E8%B0%B7_%E8%AE%80%E5%8F%96%E7%95%AB%E9%9D%A2_4.png');
+    border-bottom: 1px solid #dbdbdb;
+	border-top: 1px solid #dbdbdb;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 200px;
+}
+.neighborhood-guides .container h2 {
+    color: white;
+    font-size: 100px;
+	font-family: "shift", impact;
+}
+
+11218794_1139121806101464_4630176681016178472_n.jpg.{
+	postion: relative;
+	left: 50px;
+}
+input{
+  position:center;
+}

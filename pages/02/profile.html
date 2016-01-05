@@ -1,0 +1,36 @@
+<html>
+<body>
+<link rel=stylesheet type="text/css" href="css.css">
+<meta charset="UTF-8">
+<h1>Hi我是陳思伃!!</h1>
+
+<img src="123.jpg" height="500px" width="auto" align="right" border=10>
+<h2> Want to know more about me?</h2>
+<h4><ul>
+<li>星座：牡羊座 
+<li>生日：1997/4/9
+<li>血型：B型
+<li>興趣：打排球，聽音樂，看電影
+</ul>
+
+<p id="test" onmouseover="showMouseOver(this)" onmouseout="showMouseOut(this)">想知道我有什麼不會的嗎?</p>
+<script>
+function showMouseOver(element) {
+element.innerHTML = "不告訴你";
+}
+function showMouseOut(element) {
+element.innerHTML = "想知道我有什麼不會的嗎?";
+}
+</script>
+</h4>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()"
+direction="left" scrollamount="3" height="500" width="800"behavior="alternate">
+<img src="http://www.moaibu.com/chara/jiburi/kaonasi.jpg" width="300px" height="300px"> 
+</marquee>
+<form>
+<input type="button" value="我有興趣"
+onClick=" var name = prompt('想進一步認識嗎?留下你的名字吧:' , ' 你的名字') ; alert('很高興認識你! ' + name) ">
+</form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="Home Page.css">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor="#F3E2A9">
+	<a href="Home Page.html"><img src="Home.png" id="Home"></a>
+    <img src="Seven.jpg" id="Breakfast" width="200px" height="200px">
+  	<img src="Thai.jpg" id="Main" width="200px" height="200px">
+    <img src="Mum.jpg" id="Snack" width="200px" height="200px">
+    <img src="Noodle.jpg" id="Drink" width="200px" height="200px">
+    <div id="food1" onmouseenter="Food1()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">七里亭</h1>
+    	<img src="Lunch1.jpg" class="Photo">
+    	<p class="Info">
+    	離學校很近～又有多種飯可以選擇
+    	<br/><br/>附上飲料還是超便宜！
+    	<br/><br/><br/><br/>推薦吃: 泰式雞塊飯
+    	</p>
+    </div>
+    <div id="food2" onmouseenter="Food2()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">泰國小館</h1>
+    	<img src="Lunch2.jpg" class="Photo">
+    	<p class="Info">
+    	道地的泰式酸辣風味！連水杯都很有異國風情，but單點式可能較適合多人去點，且單價偏高，但是是吃了一次就會記住的味道
+    	<br/><br/><br/><br/>推薦吃: 椒麻雞(我不知道我亂講的 忘了有什麼)
+    	</p>
+    </div>
+    <div id="food3" onmouseenter="Food3()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">阿里媽媽</h1>
+    	<img src="Lunch3.jpg" class="Photo">
+    	<p class="Info">
+    	隱身在公館夜市小巷子中的南洋風味！
+    	<br/><br/>飯阿湯阿都是自助式！聚餐吃飯好去處～
+    	<br/><br/><br/><br/>推薦吃: 打拋豬飯
+    	</p>
+    </div>
+    <div id="food4" onmouseenter="Food4()" onmouseleave="showMouseLeave(this)"> 
+    	<h1 class="Title">麥子磨麵</h1>
+    	<img src="Lunch4.jpg" class="Photo">
+    	<p class="Info">
+    	位於溫州公園旁的麥子磨麵，提供中式、日式與義式的麵食料理，
+    	無論是熱呼呼的湯麵，或是濃郁的青醬義麵，總是帶給人滿滿的幸福感！
+    	<br/><br/>推薦吃: 番茄豬肉片滑蛋湯麵，熱熱吃、心暖暖！
+    	</p>
+    </div>
+
+
+    <script>
+	var op = 0;
+	var size = 200;
+ 	function Food1() {
+		var element = document.getElementById("food1");
+		if(op < 1){
+			op =  op + 0.05; 
+			element.style.opacity = op;
+			setTimeout(Food1, 50);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food1, 20);
+		} 
+    }
+  
+
+    function Food2() {
+		var element = document.getElementById("food2");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food2, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food2, 20);
+		} 
+    }
+
+    function Food3() {
+		var element = document.getElementById("food3");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food3, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food3, 20);
+		} 
+    }
+
+    function Food4() {
+		var element = document.getElementById("food4");
+		if(op < 1){
+			op =  op + 0.05;
+			element.style.opacity = op;
+			setTimeout(Food4, 30);
+		} 
+		if(size< 600){
+			size =  size + 2;
+			element.style.width = size+"px";
+			element.style.height= size+"px";
+			setTimeout(Food4, 20);
+		} 
+    }
+
+    function showMouseLeave(element) {
+    	size = 600;
+    	op = 1;
+		setTimeout(function(){
+			size = 200;
+			op = 0;
+			element.style.width = size+"px";
+			element.style.height = size+"px";
+			element.style.opacity = op;
+		}, 51);
+    }
+
+    </script>
+</body>
+
+</html>

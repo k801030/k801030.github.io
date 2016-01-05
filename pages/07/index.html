@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="Home Page.css">
+<head>
+</head>
+<body bgcolor="#F3E2A9">
+
+    <a href="Breakfast.html" ><img src="Breakfast.png" id="Breakfast" onmouseenter="showMouseEnter(this)" onmouseleave="showMouseLeave(this)"></a>
+    <a href="Main.html" ><img src="Main.png" id="Main" onmouseenter="showMouseEnter(this)" onmouseleave="showMouseLeave(this)"></a>
+    <a href="Snack.html" ><img src="Snack.png" id="Snack" onmouseenter="showMouseEnter(this)" onmouseleave="showMouseLeave(this)"></a>
+    <a href="Drink.html" ><img src="Drink.png" id="Drink" onmouseenter="showMouseEnter(this)" onmouseleave="showMouseLeave(this)"></a>
+    
+
+    <script>
+    function showMouseEnter(element) {
+		SizeInc(element);
+    }
+
+    function showMouseLeave(element) {
+		element.width = 221
+		setTimeout(function(){element.width = 200}, 2);
+    }
+
+    function SizeInc(element){
+		if(element.width < 221){
+			console.log(element.width)
+			element.width++;
+			setTimeout(SizeInc, 2, element);
+		} 
+    }
+    
+    function SizeDec(element){
+			if(element.width > 200){
+			console.log(element.width)
+				element.width--;
+				setTimeout(SizeDec,2, element);
+			} 
+    }
+
+    </script>
+</body>
+
+</html>

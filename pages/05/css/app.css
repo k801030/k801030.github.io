@@ -1,0 +1,48 @@
+body{
+	background-image: url("../assets/tactile_noise.png");
+  font-family: "source-han-sans-traditional" !important;
+	margin-top:2%;
+}
+h1{
+	font-size: 48px;
+	font-family: "微軟正黑體";
+	line-height: 80px !important;
+}
+h2{
+	font-size: 32px;
+	font-family: "微軟正黑體";
+	font-weight: "light";
+	line-height:60px;
+}
+.frame{
+	border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46) !important;
+}
+.menuitem{
+	font-size: 40px;
+	font-family: "微軟正黑體";
+	font-weight: "light" !important;
+	line-height: 40px;
+	padding:15px 3px;"
+
+}
+.selected{
+	border-radius:6px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+	font-size: 52px !important;
+	font-family: "微軟正黑體";
+	line-height: 45px;
+	padding:20px 10px;
+}
+.cont{
+	display: none;
+}
+#mainframe{
+	display: none;
+}
+#marker{
+	width: 100%;
+	height: 55px;
+	background-color: #1f2a2e;
+}
+

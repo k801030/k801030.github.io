@@ -1,0 +1,32 @@
+
+
+.photo .container {
+	position:relative;
+	left:475px;
+	top: 100px;
+}
+.jumbotron h1{
+	font-family: "shift", sans-serif;
+	font-weight: "bold";
+}
+.jumbotron{
+	position:relative;
+	top:130px;
+	margin-left: 450px;
+	margin-right: 450px;
+	padding-left:50px;
+	padding-right:50px;
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+}
+body{
+	background-image:url('http://abc.2008php.com/2013_Website_appreciate/2013-08-03/20130803151135.jpg');
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.photo .container .thumbnail{
+	background-color: gold; 
+}

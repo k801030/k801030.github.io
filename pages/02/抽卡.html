@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Cards Document</title>
+ 
+
+ </head>
+
+ <body>
+ <script language="JavaScript">
+ <!--
+ ImageCount = 2;
+ img = Math.floor(Math.random()*ImageCount);
+ document write(img)
+  //--></script> 
+
+ <script language="JavaScript">
+<!-- Hide this script from old browsers --
+
+function greeting()
+{
+var today = new Date();
+var hrs = today.getHours();
+document.writeln("<CENTER>");
+document.write("<H1>Good ");
+if ( hrs < 12)
+document.write("Morning");
+else if (hrs <= 18)
+document.write("Afternoon");
+else
+document.write("Evening");
+document.writeln("!</H1>");
+document.write("現在時間：");
+dayStr = today.toLocaleString();
+document.write(dayStr);
+document.write("<H1>準備好抽卡了嗎？")
+document.writeln("</CENTER>");
+}
+
+function card()
+{
+document.writeln("<CENTER>")
+document.write("<H1>恭喜你抽到的是： ");
+document.writeln("</H1>");
+ImageCount = 8
+var x = Math.floor(Math.random()*ImageCount)
+document.write("<H1><img src='未命名檔案夾/"+x+".jpg'>")
+document.writeln("</H1>");
+
+if (x == 0)
+document.writeln("<a href='https://www.facebook.com/peter.lo.1610?fref=ts'> 嗨 我就是資管守護神 peterlo</a>")
+else if (x == 1)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100000307970316&fref=ts'>嗨 大家都叫我昱蠵龜昱辰</a>")
+else if (x == 2)
+document.writeln("<a href='https://www.facebook.com/jessica.chen.946179?fref=ts'>歐嗨唷 jessica des</a>")
+else if (x == 3)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100000130788875&fref=ts'>嗨 我就是未來的系排隊長 迷弟品耀</a>")
+else if (x == 4)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100000444007981&fref=ts'>yo 大家都叫我超人欣宜 不爽就來單挑喔：）</a>")
+else if (x == 5)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100001266835648&fref=ts'>傻眼欸 竟然抽到我麵包超人</a>")
+else if (x == 6)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100002569708373&fref=ts'>吱吱吱吱吱吱吱</a>")
+else if (x == 7)
+document.writeln("<a href='https://www.facebook.com/profile.php?id=100002253904214'>恭喜你 抽到了本班系草之一</a>")
+document.writeln("<CENTER>")
+
+document.write("想多認識嗎？快來我的fb 加加好友約約");
+
+
+document.writeln("</CENTER>");
+
+}
+
+greeting();
+// -- End Hiding Here -->
+</script>
+<pre>
+ 						   <input type="button" value="go！"  onclick="card()" style="width:120px;height:80px;font-size:20px;" >
+</pre>
+ </body>
+</html>
